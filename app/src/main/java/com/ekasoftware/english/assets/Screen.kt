@@ -10,7 +10,9 @@ sealed class Screen(val route : String) {
     object ChatBot: Screen(route = "chatbot")
     object BookDetails : Screen(route = "booksdetails/{id}")
     object StoryDetails : Screen(route = "storydetails/{id}")
+    object TenseScreen : Screen(route = "tenseScreen")
     object AddNote : Screen(route = "addnote")
-    object AllWordScreen : Screen(route = "AllWordScreen")
+    object VocListScreen : Screen(route = "vocListScreen")
+    object AllWordScreen : Screen(route = "AllWordScreen/{index}")
     object UpdateNote : Screen(route = "updatenote/{id}/{title}/{comment}")
 }

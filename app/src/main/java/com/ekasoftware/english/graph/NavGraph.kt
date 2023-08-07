@@ -16,15 +16,19 @@ import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
 import com.ekasoftware.english.view.mynotes.ui.UpdateNote.UpdateNote
 import com.ekasoftware.english.view.settings.Settings
 import com.ekasoftware.english.view.stories.StoryDetails
+import com.ekasoftware.english.view.tense.model.Tense
+import com.ekasoftware.english.view.tense.view.TenseScreen
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
-import com.ekasoftware.english.view.vocablarylist.model.Word
-import com.ekasoftware.english.view.vocablarylist.view.AllWordScreen
+import com.ekasoftware.english.view.vocablarylist.allWords.view.AllWordScreen
+import com.ekasoftware.english.view.vocablarylist.allWords.model.Word
+import com.ekasoftware.english.view.vocablarylist.voclistscreen.VocListScreen
 
 @Composable
 fun SetupNavGraph(
     navController: NavHostController,
     translatorViewModel: TranslatorViewModel,
-    wordList : List<Word>
+    wordList : List<Word>,
+    tenseList : List<Tense>
 ) {
     NavHost(
         navController = navController,
@@ -98,11 +102,27 @@ fun SetupNavGraph(
             Translate(navController = navController, viewModel = translatorViewModel)
         }
 
+        composable(route = Screen.TenseScreen.route){
+            TenseScreen(navController = navController, tenseList = tenseList)
+        }
+
         composable(route = Screen.ChatBot.route) {
             ChatScreen(navController)
         }
-        composable(route = Screen.AllWordScreen.route) {
-            AllWordScreen(wordList = wordList)
+        composable(
+            route = "${Screen.AllWordScreen.route}",
+            arguments = listOf(
+                navArgument("index") {
+                    type = NavType.IntType
+                    defaultValue = 0
+                }
+            )
+        ) { backStackEntry ->
+            val index = backStackEntry.arguments?.getInt("index") ?: 0
+            AllWordScreen(navController = navController, wordList = wordList, itemIndex = index)
+        }
+        composable(route = Screen.VocListScreen.route){
+            VocListScreen(navController = navController)
         }
     }
 }

@@ -17,3 +17,12 @@ val LightBlue= Color(0xFFA2AEFF)
 val LightRed = Color(0xFFFE5F55)
 val LightPurple = Color(0xFFC9B1DD)
 val LightGreen = Color(0xFFA5B381)
+
+val TenseColor1 = Color(0xFF56CBF9)
+val TenseColor2 = Color(0xFF7FBEEB)
+val TenseColor3 = Color(0xFFAFBED1)
+val TenseColor4 = Color(0xFFEAC5D8)
+val TenseColor5 = Color(0xFFDBD8F0)
+
+val CorrectColor = Color(0xFF008000)
+val WrongColor = Color(0xFFF32013)

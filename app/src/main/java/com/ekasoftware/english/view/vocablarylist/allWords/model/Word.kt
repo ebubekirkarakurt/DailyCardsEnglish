@@ -1,4 +1,4 @@
-package com.ekasoftware.english.view.vocablarylist.model
+package com.ekasoftware.english.view.vocablarylist.allWords.model
 
 data class Word (
     val ENG: String,

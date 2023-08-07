@@ -40,12 +40,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.navigations.NavigationPage
 import com.ekasoftware.english.ui.theme.UiColor
-import com.ekasoftware.english.view.mynotes.data.Note
 import com.ekasoftware.english.view.mynotes.model.NoteDatabase
 import com.ekasoftware.english.view.mynotes.repository.NoteRepository
-import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
 import com.ekasoftware.english.view.mynotes.ui.NoteList.NoteList
 import com.ekasoftware.english.view.mynotes.viewmodel.NoteViewModelProviderFactory
 import com.ekasoftware.english.view.mynotes.viewmodel.NotesViewModel
@@ -72,7 +69,6 @@ fun HomeScreen(navController: NavHostController) {
                 MainCard(navController)
                 SpecialCardsMenu(navController)
             }
-           NavigationPage(navController = navController)
         }
 
     }
@@ -120,7 +116,7 @@ fun MainCard(navController: NavHostController) {
 @Composable
 fun SpecialCardsMenu(navController: NavHostController) {
 
-    val menuItems = listOf("Öğren", "Grammer","Notlarım")
+    val menuItems = listOf("Öğren", "Notlarım")
     val selectedTab = remember { mutableStateOf(0) }
 
     val noteRepository = NoteRepository(NoteDatabase(LocalContext.current.applicationContext))
@@ -147,8 +143,7 @@ fun SpecialCardsMenu(navController: NavHostController) {
 
     when (selectedTab.value) {
         0 -> SpecialCards(navController = navController)
-        1 -> 0
-        2 -> NoteList(navController = navController,viewModel = viewModel)
+        1 -> NoteList(navController = navController,viewModel = viewModel)
     }
 }
 
@@ -162,14 +157,16 @@ fun SpecialCards(navController: NavHostController){
         R.drawable.voclistcard,
         R.drawable.translatorcard,
         R.drawable.cardbooks,
-        R.drawable.cardquiz
+        R.drawable.cardquiz,
+
     )
 
     val cardsNav: List<String> = listOf(
-        Screen.AllWordScreen.route,
+        Screen.VocListScreen.route,
         Screen.Translate.route,
         Screen.Books.route,
-        Screen.Home.route
+        Screen.Home.route,
+
     )
 
 
@@ -209,19 +206,17 @@ fun SpecialCards(navController: NavHostController){
                     }
 
                 }
-
-
             }
         )
-
+        Image(painter = painterResource(id =  R.drawable.tensecardfoto),
+            modifier = Modifier
+                .clickable {
+                    navController.navigate(Screen.TenseScreen.route)
+                }
+                .padding(5.dp)
+                .fillMaxWidth(),
+            contentDescription = "")
     }
-
 }
 
-
-@Preview
-@Composable
-private fun Previeww() {
-   // HomeScreen(navController = rememberNavController(), viewModel(initializer = ))
-}
 

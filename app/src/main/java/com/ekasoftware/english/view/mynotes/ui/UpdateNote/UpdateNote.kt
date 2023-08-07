@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
@@ -19,10 +20,13 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButtonColors
+import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -35,7 +39,10 @@ import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import androidx.wear.compose.material.LocalContentColor
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.ui.theme.CorrectColor
+import com.ekasoftware.english.ui.theme.WrongColor
 import com.ekasoftware.english.view.mynotes.data.Note
 import com.ekasoftware.english.view.mynotes.model.NoteDatabase
 import com.ekasoftware.english.view.mynotes.repository.NoteRepository
@@ -73,7 +80,9 @@ fun UpdateNoteItems(navController: NavHostController,
         factory = NoteViewModelProviderFactory(app = LocalContext.current.applicationContext as Application, noteRepository = noteRepository)
     )
 
-    Column(modifier = Modifier.fillMaxSize()
+    Column(modifier = Modifier
+        .padding(top = 15.dp)
+        .fillMaxSize()
     ) {
 
         Row(
@@ -81,19 +90,20 @@ fun UpdateNoteItems(navController: NavHostController,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Button(
-                modifier = Modifier.background(Color.Black),
+                modifier = Modifier.background(Color.Transparent),
                 onClick = { navController.navigate(Screen.Home.route) },
                 colors = ButtonDefaults.buttonColors(Color.Transparent)
             ) {
                 Icon(
                     imageVector = Icons.Filled.KeyboardArrowLeft,
-                    contentDescription = ""
+                    contentDescription = "",
+                    tint = Color.Black
                 )
             }
             Box(modifier = Modifier) {
                 Row {
                     Button(
-                        modifier = Modifier.background(Color.Black),
+                        modifier = Modifier.background(Color.Transparent),
                         onClick = {
                             val updatedNote = Note(
                                 id = id,
@@ -107,11 +117,12 @@ fun UpdateNoteItems(navController: NavHostController,
                     ) {
                         Icon(
                             imageVector = Icons.Filled.Delete,
-                            contentDescription = ""
+                            contentDescription = "",
+                            tint = WrongColor
                         )
                     }
                     Button(
-                        modifier = Modifier.background(Color.Black),
+                        modifier = Modifier.background(Color.Transparent),
                         onClick = {
                             val updatedNote = Note(
                                 id = id,
@@ -123,9 +134,12 @@ fun UpdateNoteItems(navController: NavHostController,
                         },
                         colors = ButtonDefaults.buttonColors(Color.Transparent)
                     ) {
+
                         Icon(
-                            imageVector = Icons.Filled.CheckCircle,
-                            contentDescription = ""
+
+                            imageVector = Icons.Filled.Check,
+                            contentDescription = "",
+                            tint = CorrectColor
                         )
                     }
                 }

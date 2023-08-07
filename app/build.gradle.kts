@@ -103,8 +103,11 @@ dependencies {
 
     //Hilt
     implementation ("androidx.hilt:hilt-navigation-compose:1.0.0-alpha03")
+    
     //LiveData
     implementation ("androidx.compose.runtime:runtime-livedata:1.1.0")
 
+    //SwapableCard
+    implementation ("me.saket.swipe:swipe:1.2.0")
 
 }
