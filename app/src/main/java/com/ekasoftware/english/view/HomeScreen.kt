@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.shape.CircleShape
@@ -80,7 +82,7 @@ fun MainCard(navController: NavHostController) {
     Box(modifier = Modifier.padding(15.dp)) {
         Box(modifier = Modifier) {
             Image(
-                painter = painterResource(id = R.drawable.koalabotcard),
+                painter = painterResource(id = R.drawable.reboot),
                 contentDescription = "maincard"
             )
             Box(modifier = Modifier
@@ -90,20 +92,22 @@ fun MainCard(navController: NavHostController) {
                 Button(
                     onClick = { navController.navigate(Screen.ChatBot.route) },
                     modifier = Modifier
-                        .padding(10.dp)
+                        .padding(5.dp)
+                        .wrapContentSize()
                         .clip(shape = CircleShape)
                         .background(Color.Transparent)
                         .align(Alignment.BottomStart),
                     colors = ButtonDefaults.buttonColors(
-                        UiColor
+                        containerColor = Color.Transparent,
+                        contentColor = Color.Black
                     )
                 ) {
 
-                    Text(text = "KoalaBot ile konus")
+                    Text(text = "Reboot ile konus")
 
                     Icon(
                         imageVector = Icons.Filled.KeyboardArrowRight,
-                        contentDescription = "koalabot"
+                        contentDescription = null
                     )
 
                 }
@@ -125,8 +129,10 @@ fun SpecialCardsMenu(navController: NavHostController) {
     )
 
     TabRow(
+        modifier = Modifier.padding(start = 20.dp, end = 20.dp),
         selectedTabIndex = selectedTab.value,
-        contentColor = UiColor
+        contentColor = Color.Black,
+        containerColor = Color.Transparent
     )
     {
         menuItems.forEachIndexed { index, text ->
@@ -154,10 +160,10 @@ fun SpecialCards(navController: NavHostController){
 
 
     val cards: List<Int> = listOf(
-        R.drawable.voclistcard,
-        R.drawable.translatorcard,
-        R.drawable.cardbooks,
-        R.drawable.cardquiz,
+        R.drawable.kelimelisteleri,
+        R.drawable.translator,
+        R.drawable.kitaplarvehikayeler,
+        R.drawable.newezber,
 
     )
 
@@ -166,14 +172,13 @@ fun SpecialCards(navController: NavHostController){
         Screen.Translate.route,
         Screen.Books.route,
         Screen.Home.route,
-
     )
 
 
     Column {
 
         LazyVerticalGrid(
-            columns = GridCells.Adaptive(128.dp),
+            columns = GridCells.Adaptive(135.dp),
             contentPadding = PaddingValues(
                 start = 5.dp,
                 top = 10.dp,
@@ -208,14 +213,20 @@ fun SpecialCards(navController: NavHostController){
                 }
             }
         )
-        Image(painter = painterResource(id =  R.drawable.tensecardfoto),
-            modifier = Modifier
-                .clickable {
-                    navController.navigate(Screen.TenseScreen.route)
-                }
-                .padding(5.dp)
-                .fillMaxWidth(),
-            contentDescription = "")
+        Column(modifier = Modifier.fillMaxWidth()
+        ){
+            Image(painter = painterResource(id =  R.drawable.kelimeezber),
+                modifier = Modifier
+                    .clickable {
+                        navController.navigate(Screen.TenseScreen.route)
+                    }
+                    .align(Alignment.CenterHorizontally)
+                    .size(300.dp)
+                    .padding(10.dp, bottom = 20.dp)
+                    .fillMaxWidth(),
+                contentDescription = "")
+        }
+
     }
 }
 

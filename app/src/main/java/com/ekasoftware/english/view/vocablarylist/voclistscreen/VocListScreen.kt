@@ -34,13 +34,15 @@ import com.ekasoftware.english.assets.Screen
 @Composable
 fun VocListScreen(navController: NavHostController,) {
     val vocListImages = listOf(
-        R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,
-        R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,
-        R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,R.drawable.voclistcardmeyve,
+        R.drawable.bayraklar ,R.drawable.meyveler,
+        R.drawable.yoltarifi, R.drawable.havadurumu,
+        R.drawable.gunlukaktivite,R.drawable.alisveris,
+        R.drawable.saglik,R.drawable.rutinler,
+        R.drawable.tatilvegezi,
     )
 
     val vocListTitles = listOf(
-        "Ülkeler","Yiyecekler", "Yönler", "Hava Durumu/Mevsimler",
+        "Ülkeler","Meyve-Sebze", "Yönler", "Hava Durumu/Mevsimler",
         "Günlük Aktivite", "Alış-Veriş", "Sağlık", "Rutinler", "Tatil ve GEzi"
     )
 
@@ -92,7 +94,7 @@ fun VocListScreen(navController: NavHostController,) {
                 }
             }
         )
-        Image(painter = painterResource(id = R.drawable.cardbooks),
+        Image(painter = painterResource(id = R.drawable.reboot),
             modifier = Modifier
                 .fillMaxWidth(),
             contentDescription = "")

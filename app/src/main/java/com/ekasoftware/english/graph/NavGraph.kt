@@ -14,7 +14,6 @@ import com.ekasoftware.english.view.books.Books
 import com.ekasoftware.english.view.chatbot.ui.ChatScreen
 import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
 import com.ekasoftware.english.view.mynotes.ui.UpdateNote.UpdateNote
-import com.ekasoftware.english.view.settings.Settings
 import com.ekasoftware.english.view.stories.StoryDetails
 import com.ekasoftware.english.view.tense.model.Tense
 import com.ekasoftware.english.view.tense.view.TenseScreen
@@ -39,9 +38,9 @@ fun SetupNavGraph(
             HomeScreen(navController = navController)
         }
 
-        composable(route = Screen.Settings.route) {
+        /*composable(route = Screen.Settings.route) {
             Settings(navController = navController)
-        }
+        }*/
 
         composable(route = Screen.Books.route) {
             Books(navController = navController)

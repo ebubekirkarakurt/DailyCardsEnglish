@@ -39,7 +39,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.ekasoftware.english.R
 
-
+/*
 
 @Composable
 fun Settings(navController : NavHostController) {
@@ -60,7 +60,7 @@ fun Settings(navController : NavHostController) {
                    verticalAlignment = Alignment.CenterVertically) {
 
                    Image(
-                       painter = painterResource(id = R.drawable.settingsimage),
+                       painter = painterResource(id = R.drawable.ezber),
                        contentDescription = "settings",
                        alignment = Alignment.CenterEnd
                    )
@@ -256,3 +256,5 @@ fun LanguageDropDown() {
 fun Preview() {
     Settings(navController = rememberNavController())
 }
+
+ */

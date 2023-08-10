@@ -42,7 +42,9 @@ import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.ui.theme.GrayLight
 import com.ekasoftware.english.ui.theme.LightBlue
+import com.ekasoftware.english.ui.theme.LightPurple
 import com.ekasoftware.english.ui.theme.MyBlack
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
 
@@ -94,9 +96,11 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
         ) {
 
         Card( modifier = Modifier
-            .background(Color.Transparent)
-            .shadow(elevation = 2.dp, spotColor = Color.Black),
-            colors = CardDefaults.outlinedCardColors(LightBlue)
+            .background(Color.Transparent),
+            colors = CardDefaults.outlinedCardColors(
+                contentColor = Color.Black,
+                containerColor = GrayLight
+            )
         )
             {
             OutlinedTextField(
@@ -124,6 +128,9 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
                         context = context
                     )
                 },
+                colors = ButtonDefaults.buttonColors(
+                    Color.Transparent
+                ),
                 enabled = state.isButtonEnabled,
             ) {
                 Text(text = "Çevir")
@@ -149,9 +156,11 @@ fun TranslateResult(viewModel: TranslatorViewModel) {
     {
 
         Card( modifier = Modifier
-            .shadow(elevation = 2.dp, spotColor = MyBlack)
             .background(Color.Transparent),
-            colors = CardDefaults.outlinedCardColors(LightBlue)
+            colors = CardDefaults.outlinedCardColors(
+                contentColor = Color.Black,
+                containerColor = GrayLight
+            )
 
         ){
             OutlinedTextField(

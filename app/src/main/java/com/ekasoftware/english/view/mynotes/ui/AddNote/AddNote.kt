@@ -15,16 +15,11 @@ import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Snackbar
-import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
-import androidx.compose.material3.contentColorFor
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -33,12 +28,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.ui.theme.CorrectColor
 import com.ekasoftware.english.view.mynotes.data.Note
 import com.ekasoftware.english.view.mynotes.model.NoteDatabase
 import com.ekasoftware.english.view.mynotes.repository.NoteRepository
@@ -72,35 +66,41 @@ fun AddNoteItems(navController: NavHostController) {
         Row(modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween){
             Button(
-                modifier = Modifier.background(Color.Black),
+                modifier = Modifier.background(Color.Transparent),
                 onClick = { navController.navigate(Screen.Home.route) },
-                colors = ButtonDefaults.buttonColors(Color.Transparent)
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = Color.Black
+                )
 
             ) {
 
                 Icon(imageVector = Icons.Filled.KeyboardArrowLeft,
-                    contentDescription = "",
+                    contentDescription = null,
                 )
             }
 
             Button(
-                modifier = Modifier.background(Color.Black),
+                modifier = Modifier.background(Color.White),
                 onClick = {
                     val note = Note(
                         0,
                         title,
                         comment
                     )
-                    if(!(title.isNullOrEmpty())){
+                    if(title.isNotEmpty()){
                         viewModel.addNote(note)
                         navController.popBackStack()}
                     },
-                colors = ButtonDefaults.buttonColors(Color.Transparent)
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = CorrectColor
+                )
 
             ) {
 
-                Icon(imageVector = Icons.Filled.CheckCircle,
-                    contentDescription = "",
+                Icon(imageVector = Icons.Filled.Check,
+                    contentDescription = null,
                 )
             }
         }
@@ -144,15 +144,8 @@ fun AddNoteItems(navController: NavHostController) {
             }
 
         }
-
-
-
     }
 }
 
-@Composable
-fun rememberScaffoldState(
-    snackbarHostState: SnackbarHostState = remember { SnackbarHostState() }
-) {
-}
+
 

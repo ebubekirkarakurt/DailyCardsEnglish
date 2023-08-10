@@ -24,5 +24,9 @@ val TenseColor3 = Color(0xFFAFBED1)
 val TenseColor4 = Color(0xFFEAC5D8)
 val TenseColor5 = Color(0xFFDBD8F0)
 
+val ChatBotScreenColor = Color(0xFF78C1F3)
+
 val CorrectColor = Color(0xFF008000)
 val WrongColor = Color(0xFFF32013)
+
+val GrayLight = Color(0xFFF5F5F5)

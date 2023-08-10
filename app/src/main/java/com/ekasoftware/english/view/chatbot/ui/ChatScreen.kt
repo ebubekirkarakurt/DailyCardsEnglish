@@ -2,11 +2,11 @@ package com.ekasoftware.english.view.chatbot.ui
 
 
 import android.annotation.SuppressLint
-import android.graphics.Paint.Align
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
@@ -26,9 +27,11 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarColors
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -44,10 +47,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import androidx.wear.compose.material.CardDefaults
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.ui.theme.UiColor
+import com.ekasoftware.english.ui.theme.ChatBotScreenColor
 import com.ekasoftware.english.view.chatbot.data.QABotData
 
 
@@ -56,15 +58,16 @@ import com.ekasoftware.english.view.chatbot.data.QABotData
 @Composable
 fun ChatScreen(navController: NavHostController) {
 
-
-
     Scaffold(
+        modifier = Modifier,
+        containerColor = ChatBotScreenColor,
         topBar = {
             ChatTopBar(navController)
         }
     ) {paddingValues->
         Modifier.padding(paddingValues)
     }
+
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -89,10 +92,11 @@ fun ChatTopBar(navController: NavHostController) {
 
     Column {
         TopAppBar(
-            title = { Text(
-                modifier = Modifier.padding(5.dp),
-                text = "Çevrimiçi") },
+            title = { },
             modifier = Modifier.background(Color.Blue),
+            colors = TopAppBarDefaults.largeTopAppBarColors(
+                ChatBotScreenColor
+            ),
             navigationIcon = {
                 Row {
                     Icon(imageVector = Icons.Filled.KeyboardArrowLeft,
@@ -100,81 +104,107 @@ fun ChatTopBar(navController: NavHostController) {
                             .align(Alignment.CenterVertically)
                             .padding(5.dp)
                             .clickable {
-                            navController.navigate(Screen.Home.route)
-                        },
-                        contentDescription = "")
-                    Image(
-                        painter = painterResource(id = R.drawable.koalachat),
-                        contentDescription = "img",
-                        Modifier.size(40.dp)
-                    )
+                                navController.navigate(Screen.Home.route)
+                            },
+                        contentDescription = null)
+
                 }
             }
         )
-        Column(
-            modifier = Modifier
-                .verticalScroll(rememberScrollState())
-                .fillMaxSize()
-                .padding(top = 16.dp)
-        ) {
-            Card(
-                modifier = Modifier
-                    .background(Color.Transparent)
-                    .padding(10.dp),
-                colors = androidx.compose.material3.CardDefaults.cardColors(
-                    Color.White
-                ),
-                border = BorderStroke(1.dp, Color.Black)
-            ) {
-                Row(
-                    modifier = Modifier
-                        .padding(10.dp)
-                        .fillMaxWidth()
-                ) {
 
-                    Image(
-                        painter = painterResource(id = R.drawable.koalachat),
-                        contentDescription = "img",
-                        Modifier.size(40.dp)
-                    )
-
-                    Text(
-                        text = botData.merhaba,
-                        modifier = Modifier
-                            .align(Alignment.CenterVertically)
-                            .padding(5.dp),
-                        fontSize = 16.sp,
-                        color = Color.Black
-                    )
-                }
+        Row (horizontalArrangement = Arrangement.Center,
+            modifier = Modifier.fillMaxWidth(1f)
+        ){
+            Column {
+                Image(
+                    painter = painterResource(id = R.drawable.robot2),
+                    contentDescription = "img",
+                    Modifier.size(80.dp)
+                )
+                Text(text = "Reboot",
+                    modifier = Modifier,
+                    fontSize = 25.sp)
             }
 
-            Column(Modifier.padding(10.dp)) {
 
-                userButtons.forEachIndexed { index, string ->
+        }
 
-                    Button(
-                        onClick = {
-                            answer = botAnswers[index]
-                        },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = Color.Transparent,
-                            contentColor = Color.Black,
-                        ),
-                        border = BorderStroke(0.5.dp, Color.Black)
+        Surface(modifier = Modifier
+            .fillMaxSize(1f)
+            .padding(top = 50.dp)
+            .shadow(
+                5.dp,
+                shape = RoundedCornerShape(topStart = 40.dp, topEnd = 40.dp)
+            ),
+
+        ) {
+            Column(
+                modifier = Modifier
+                    .background(Color.Transparent)
+                    .verticalScroll(rememberScrollState())
+                    .fillMaxSize()
+                    .padding(top = 25.dp)
+            ) {
+                Card(
+                    modifier = Modifier
+                        .background(Color.Transparent)
+                        .padding(10.dp),
+                    colors = androidx.compose.material3.CardDefaults.cardColors(
+                        containerColor = Color.White,
+                        disabledContainerColor = Color.Transparent,
+
+                    )
+                ) {
+
+                    Row(
+                        modifier = Modifier
+                            .padding(10.dp)
+                            .fillMaxWidth()
                     ) {
-                        Text(text = string)
-                    }
 
+                        Text(
+                            text = botData.merhaba,
+                            modifier = Modifier
+                                .align(Alignment.CenterVertically)
+                                .padding(5.dp),
+                            fontSize = 16.sp,
+                            color = Color.Black
+                        )
+                    }
                 }
-                if(answer !== ""){
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Answer(answer = answer)
+
+                Column(
+                    horizontalAlignment = Alignment.End,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+
+                    userButtons.forEachIndexed { index, string ->
+
+                        Button(
+                            onClick = {
+                                answer = botAnswers[index]
+                            },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = ChatBotScreenColor,
+                                contentColor = Color.Black,
+                            ),
+                        ) {
+                            Text(text = string)
+                        }
+
+                    }
+                    if(answer !== ""){
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Answer(answer = answer)
+                    }
                 }
             }
         }
     }
 }
+
 
 @Composable
 fun Answer(answer: String) {
@@ -199,9 +229,10 @@ fun Answer(answer: String) {
             .background(Color.Transparent)
             .padding(10.dp),
         colors = androidx.compose.material3.CardDefaults.cardColors(
-            Color.White
-        ),
-        border = BorderStroke(1.dp, Color.Black)
+            Color.Transparent,
+            disabledContainerColor = Color.Transparent,
+        )
+
     ) {
         Row(
             modifier = Modifier
@@ -209,11 +240,7 @@ fun Answer(answer: String) {
                 .fillMaxWidth()
         ) {
 
-            Image(
-                painter = painterResource(id = R.drawable.koalachat),
-                contentDescription = "img",
-                Modifier.size(40.dp)
-            )
+
             Text(
                 text = answer,
                 modifier = Modifier
@@ -225,17 +252,17 @@ fun Answer(answer: String) {
         }
 
     }
-    Column {
+    Column(modifier = Modifier.fillMaxWidth(1f)) {
         userButtons2.forEachIndexed { index, string ->
             Button(
+                modifier = Modifier.align(Alignment.End),
                 onClick = {
                     secondanswer = botAnswers2[index]
                 },
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color.Transparent,
+                    containerColor = ChatBotScreenColor,
                     contentColor = Color.Black,
-                ),
-                border = BorderStroke(0.5.dp, Color.Black)
+                )
             ) {
                 Text(text = string)
             }
@@ -247,9 +274,9 @@ fun Answer(answer: String) {
                     .background(Color.Transparent)
                     .padding(10.dp),
                 colors = androidx.compose.material3.CardDefaults.cardColors(
-                    Color.White
-                ),
-                border = BorderStroke(1.dp, Color.Black)
+                    Color.Transparent,
+                    disabledContainerColor = Color.Transparent,
+                )
             ) {
                 Row(
                     modifier = Modifier
@@ -257,12 +284,6 @@ fun Answer(answer: String) {
                         .fillMaxWidth()
                 ) {
 
-                    Image(
-                        painter = painterResource(id = R.drawable.koalachat),
-                        contentDescription = "img",
-                        Modifier.size(40.dp)
-                    )
-                    println(secondanswer)
                     Text(
                         text = secondanswer,
                         modifier = Modifier
