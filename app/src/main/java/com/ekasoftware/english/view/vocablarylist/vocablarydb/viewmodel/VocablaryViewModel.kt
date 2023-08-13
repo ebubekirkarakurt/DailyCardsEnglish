@@ -7,12 +7,12 @@ import com.ekasoftware.english.view.vocablarylist.vocablarydb.data.Vocablary
 import com.ekasoftware.english.view.vocablarylist.vocablarydb.repository.VocablaryRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class VocablaryViewModel(app: Application,
                      private val vocRepository: VocablaryRepository
 ) :
     AndroidViewModel(app){
-
 
     fun getAllVocs() = vocRepository.getAllVocs()
 
@@ -25,4 +25,9 @@ class VocablaryViewModel(app: Application,
     fun deleteVoc(vocablary: Vocablary) = viewModelScope.launch {
         vocRepository.deleteVoc(vocablary)
     }
+
+    suspend fun getRandomVocs(): List<Vocablary> = withContext(Dispatchers.IO) {
+        vocRepository.getRandomVocs()
+    }
+
 }

@@ -1,24 +1,24 @@
 package com.ekasoftware.english.view.booksandstories.books.network
 
-import com.ekasoftware.english.view.vocablarylist.allWords.model.Word
+import com.ekasoftware.english.view.booksandstories.books.model.Book
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
-interface ApiService {
-    @GET("/")
-    suspend fun getMovies() : List<Word>
+interface BooksApiService {
+    @GET("api/v1/stories")
+    suspend fun getBooks() : List<Book>
 
-    //https://node-api-vercel-x539-myj77iom4-ebubekirkarakurt.vercel.app/
+    //https://64b3dc980efb99d86268750d.mockapi.io/api/v1/stories
 
     companion object {
-        var apiService: ApiService? = null
-        fun getInstance() : ApiService {
+        var apiService: BooksApiService? = null
+        fun getInstance() : BooksApiService {
             if (apiService == null) {
                 apiService = Retrofit.Builder()
-                    .baseUrl("https://node-api-vercel-x539-myj77iom4-ebubekirkarakurt.vercel.app")
+                    .baseUrl("https://64b3dc980efb99d86268750d.mockapi.io/")
                     .addConverterFactory(GsonConverterFactory.create())
-                    .build().create(ApiService::class.java)
+                    .build().create(BooksApiService::class.java)
             }
             return apiService!!
         }

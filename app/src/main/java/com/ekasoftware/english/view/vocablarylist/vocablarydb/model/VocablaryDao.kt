@@ -20,4 +20,7 @@ interface VocablaryDao {
     @Delete
     suspend fun deleteVoc(vocablary : Vocablary)
 
+    @Query("SELECT * FROM vocablary ORDER BY RANDOM() LIMIT 20")
+    fun getRandomVocs(): List<Vocablary>
+
 }

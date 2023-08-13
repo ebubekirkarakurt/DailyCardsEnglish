@@ -15,4 +15,6 @@ sealed class Screen(val route : String) {
     object VocListScreen : Screen(route = "vocListScreen")
     object AllWordScreen : Screen(route = "AllWordScreen/{index}")
     object UpdateNote : Screen(route = "updatenote/{id}/{title}/{comment}")
+
+    object Memorization : Screen(route = "memorization")
 }

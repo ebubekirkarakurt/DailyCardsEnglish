@@ -8,18 +8,21 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.view.HomeScreen
-import com.ekasoftware.english.view.books.BookDetails
+import com.ekasoftware.english.view.booksandstories.books.model.Book
+import com.ekasoftware.english.view.booksandstories.books.view.BookDetails
 import com.ekasoftware.english.view.translator.Translate
-import com.ekasoftware.english.view.books.Books
+import com.ekasoftware.english.view.booksandstories.books.view.Books
+import com.ekasoftware.english.view.booksandstories.stories.model.Story
 import com.ekasoftware.english.view.chatbot.ui.ChatScreen
 import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
 import com.ekasoftware.english.view.mynotes.ui.UpdateNote.UpdateNote
-import com.ekasoftware.english.view.stories.StoryDetails
+import com.ekasoftware.english.view.booksandstories.stories.view.StoryDetails
 import com.ekasoftware.english.view.tense.model.Tense
 import com.ekasoftware.english.view.tense.view.TenseScreen
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
 import com.ekasoftware.english.view.vocablarylist.allWords.view.AllWordScreen
 import com.ekasoftware.english.view.vocablarylist.allWords.model.Word
+import com.ekasoftware.english.view.vocablarylist.memorization.MemorizationScreen
 import com.ekasoftware.english.view.vocablarylist.voclistscreen.VocListScreen
 
 @Composable
@@ -27,7 +30,9 @@ fun SetupNavGraph(
     navController: NavHostController,
     translatorViewModel: TranslatorViewModel,
     wordList : List<Word>,
-    tenseList : List<Tense>
+    tenseList : List<Tense>,
+    booksList : List<Book>,
+    storyList : List<Story>
 ) {
     NavHost(
         navController = navController,
@@ -81,7 +86,7 @@ fun SetupNavGraph(
             )
         ){ backStackEntry ->
             val index = backStackEntry.arguments?.getInt("id") ?: 0
-            StoryDetails(navController = navController, index = index)
+            StoryDetails(navController = navController, storyList = storyList,index = index)
         }
 
         composable(
@@ -94,7 +99,7 @@ fun SetupNavGraph(
             )
         ) { backStackEntry ->
             val index = backStackEntry.arguments?.getInt("id") ?: 0
-            BookDetails(navController = navController, index = index)
+            BookDetails(navController = navController, booksList = booksList,index = index)
         }
 
         composable(route = Screen.Translate.route) {
@@ -123,5 +128,10 @@ fun SetupNavGraph(
         composable(route = Screen.VocListScreen.route){
             VocListScreen(navController = navController)
         }
+
+        composable(route = Screen.Memorization.route){
+            MemorizationScreen(navController = navController)
+        }
+
     }
 }

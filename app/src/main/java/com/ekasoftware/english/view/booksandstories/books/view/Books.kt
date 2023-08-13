@@ -1,4 +1,4 @@
-package com.ekasoftware.english.view.books
+package com.ekasoftware.english.view.booksandstories.books.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -29,7 +29,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.view.stories.StoryListViewModel
+import com.ekasoftware.english.view.booksandstories.books.assets.BookObjectViewModel
+import com.ekasoftware.english.view.booksandstories.stories.assets.StoryObjectViewModel
+import com.ekasoftware.english.view.booksandstories.stories.viewmodel.StoryViewModel
 
 
 @Composable
@@ -43,10 +45,10 @@ fun Books(navController: NavHostController) {
 @Composable
 fun BooksList(navController: NavHostController) {
 
-    val viewModel: BookListViewModel = viewModel()
+    val viewModel: BookObjectViewModel = viewModel()
     val bookList = viewModel.bookList
 
-    val storyViewModel: StoryListViewModel = viewModel()
+    val storyViewModel: StoryObjectViewModel = viewModel()
     val storyList = storyViewModel.storyList
 
     Column(modifier = Modifier
@@ -61,7 +63,8 @@ fun BooksList(navController: NavHostController) {
                 navController.navigate(Screen.Home.route)
             },
             colors = ButtonDefaults.outlinedButtonColors(
-                Color.Transparent
+                containerColor = Color.Transparent,
+                contentColor = Color.Black
             )
         )
         {
@@ -72,7 +75,7 @@ fun BooksList(navController: NavHostController) {
         Column()
         {
             Column {
-                Text(text = "Kitaplar",
+                Text(text = "Macera",
                     modifier = Modifier.padding(10.dp),
                     fontSize = 25.sp)
 
@@ -170,7 +173,7 @@ fun BooksList(navController: NavHostController) {
 
 @Preview
 @Composable
-fun Preview() {
+fun PreviewBookLists() {
 
     Books(navController = rememberNavController())
 }

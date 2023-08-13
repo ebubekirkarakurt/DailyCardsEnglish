@@ -33,7 +33,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.paint
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -53,8 +56,12 @@ import com.ekasoftware.english.view.mynotes.viewmodel.NotesViewModel
 @Composable
 fun HomeScreen(navController: NavHostController) {
 
-    Surface() {
-        Column {
+
+    Surface(modifier = Modifier
+        .fillMaxSize()
+    ) {
+
+       Column {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -171,7 +178,7 @@ fun SpecialCards(navController: NavHostController){
         Screen.VocListScreen.route,
         Screen.Translate.route,
         Screen.Books.route,
-        Screen.Home.route,
+        Screen.Memorization.route,
     )
 
 

@@ -108,8 +108,7 @@ fun AllWordScreen(navController: NavHostController,
                                     item.TR
                                 )
 
-                                viewModel.addVoc(voc)
-                            println("Eklendi.. ${voc.id} ${voc.ENG} ${voc.TR} ")
+                                viewModel.deleteVoc(voc)
                         },
                         icon = {
                                 Row(
@@ -138,8 +137,7 @@ fun AllWordScreen(navController: NavHostController,
                                     item.TR
                                 )
 
-                                viewModel.deleteVoc(voc)
-                            println("Silinid.. ${voc.id} ${voc.ENG} ${voc.TR} ")
+                                viewModel.addVoc(voc)
 
                         },
                         icon = {

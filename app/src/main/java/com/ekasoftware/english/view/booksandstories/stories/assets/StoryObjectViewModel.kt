@@ -1,11 +1,11 @@
-package com.ekasoftware.english.view.stories
+package com.ekasoftware.english.view.booksandstories.stories.assets
 
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 
-class StoryListViewModel : ViewModel() {
+class StoryObjectViewModel : ViewModel() {
 
-    val storyList = mutableStateListOf<Story>()
+    val storyList = mutableStateListOf<StoryObject>()
 
     init {
 

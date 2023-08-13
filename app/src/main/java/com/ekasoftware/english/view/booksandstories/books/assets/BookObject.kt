@@ -1,4 +1,6 @@
 package com.ekasoftware.english.view.booksandstories.books.assets
 
-class BookObject {
-}
+data class BookObject(
+    var title: String,
+    var img: Int,
+)

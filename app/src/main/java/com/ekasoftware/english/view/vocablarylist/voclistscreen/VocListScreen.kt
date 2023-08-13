@@ -38,7 +38,7 @@ fun VocListScreen(navController: NavHostController,) {
         R.drawable.yoltarifi, R.drawable.havadurumu,
         R.drawable.gunlukaktivite,R.drawable.alisveris,
         R.drawable.saglik,R.drawable.rutinler,
-        R.drawable.tatilvegezi,
+                R.drawable.tatilvegezi,
     )
 
     val vocListTitles = listOf(
@@ -58,8 +58,9 @@ fun VocListScreen(navController: NavHostController,) {
             Icon(imageVector = Icons.Filled.KeyboardArrowLeft, contentDescription = "backbutton")
         }
 
+
         LazyVerticalGrid(
-            columns = GridCells.Adaptive(110.dp),
+            columns = GridCells.Adaptive(125.dp),
             contentPadding = PaddingValues(
                 start = 5.dp,
                 top = 20.dp,
@@ -79,7 +80,7 @@ fun VocListScreen(navController: NavHostController,) {
                                 .padding(end = 15.dp, bottom = 5.dp)
                                 .align(Alignment.CenterVertically)
                                 .clickable {
-                                    navController.navigate("AllWordScreen/"+ index)
+                                    navController.navigate("AllWordScreen/" + index)
                                 }){
                             Image(
                                 painter = painterResource(id = vocListImages[index]),
@@ -94,10 +95,10 @@ fun VocListScreen(navController: NavHostController,) {
                 }
             }
         )
-        Image(painter = painterResource(id = R.drawable.reboot),
+        /* Image(painter = painterResource(id = R.drawable.reboot),
             modifier = Modifier
                 .fillMaxWidth(),
-            contentDescription = "")
+            contentDescription = "")*/
 
     }
 
