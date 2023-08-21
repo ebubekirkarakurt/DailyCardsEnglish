@@ -1,4 +1,4 @@
-package com.ekasoftware.english.view.booksandstories.books.view
+/*package com.ekasoftware.english.view.booksandstories.books.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -102,4 +102,4 @@ fun BookDetails(
 
     }
 }
-
+*/

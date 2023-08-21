@@ -1,14 +1,19 @@
-package com.ekasoftware.english.view.booksandstories.books.view
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material3.Button
@@ -20,41 +25,47 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
+import coil.compose.rememberImagePainter
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.view.booksandstories.books.assets.BookObjectViewModel
-import com.ekasoftware.english.view.booksandstories.stories.assets.StoryObjectViewModel
-import com.ekasoftware.english.view.booksandstories.stories.viewmodel.StoryViewModel
-
+import com.ekasoftware.english.ui.theme.MyGray
+import com.ekasoftware.english.view.booksandstories.books.model.Book
+import com.ekasoftware.english.view.booksandstories.stories.model.Story
 
 @Composable
-fun Books(navController: NavHostController) {
+fun Books(
+    navController: NavHostController,
+    storyList: List<Story>,
+    bookList: List<Book>
+) {
     Column {
-        BooksList(navController = navController)
+        BooksList(
+            navController = navController,
+            storyList = storyList,
+            bookList = bookList
+        )
     }
 }
 
-
 @Composable
-fun BooksList(navController: NavHostController) {
+fun BooksList(
+    navController: NavHostController,
+    storyList: List<Story>,
+    bookList: List<Book>
+) {
 
-    val viewModel: BookObjectViewModel = viewModel()
-    val bookList = viewModel.bookList
-
-    val storyViewModel: StoryObjectViewModel = viewModel()
-    val storyList = storyViewModel.storyList
-
-    Column(modifier = Modifier
-        .background(Color.White)
-        .fillMaxSize())
-    {
+    Column(
+        modifier = Modifier
+            .background(MyGray)
+            .fillMaxSize()
+    ) {
         Button(
             modifier = Modifier
                 .background(Color.Transparent)
@@ -66,114 +77,156 @@ fun BooksList(navController: NavHostController) {
                 containerColor = Color.Transparent,
                 contentColor = Color.Black
             )
-        )
-        {
+        ) {
             Icon(imageVector = Icons.Filled.KeyboardArrowLeft, contentDescription = "backbutton")
         }
+/*
+        Column(Modifier
+            .padding(10.dp)
+        ) {
 
+            Text(
+                text = "Kitaplar",
+                modifier = Modifier.padding(10.dp),
+                fontSize = 25.sp,
+                fontStyle = FontStyle.Italic
+            )
 
-        Column()
-        {
-            Column {
-                Text(text = "Macera",
-                    modifier = Modifier.padding(10.dp),
-                    fontSize = 25.sp)
-
-                Row(
-                    Modifier.horizontalScroll(rememberScrollState())
-                )
-                {
-                    for ((id, book) in bookList.withIndex()) {
-                        Row(
+            Row(
+                Modifier
+                    .background(MyGray)
+                    .horizontalScroll(rememberScrollState())
+            ) {
+                bookList.forEachIndexed { index, book ->
+                    Row(
+                        modifier = Modifier
+                            .background(MyGray)
+                            .padding(5.dp)
+                    ) {
+                        Column(
                             modifier = Modifier
-                                .padding(5.dp)
-
-                        ) {
-
-                            Column(modifier = Modifier
+                                .background(Color.Transparent)
                                 .clickable {
-                                    navController.navigate(route = "booksdetails/"+ id)
+                                    navController.navigate(route = "booksdetails/" + index)
                                 }
+                        ) {
+                            Card(
+                                modifier = Modifier
+                                    .background(Color.White)
+                                    .clip(RoundedCornerShape(10.dp))
+                                    .padding(5.dp),
+                                colors = CardDefaults.cardColors(Color.Transparent)
                             ) {
-                                Card(
-                                    modifier = Modifier
-                                        .background(Color.Transparent)
-                                        .padding(5.dp),
-                                    colors = CardDefaults.cardColors(Color.Transparent)
 
-                                ) {
+                                val bookPainter = rememberImagePainter(data = book.imageResource)
+
+                                Column {
                                     Image(
-                                        painter = painterResource(id = book.img),
+                                        painter = bookPainter,
                                         modifier = Modifier
-                                            .padding(5.dp),
-                                        contentDescription = "img"
+                                            .padding(5.dp)
+                                            .size(150.dp),
+                                        contentDescription = null,
+                                        contentScale = ContentScale.Fit
                                     )
 
+                                    Text(
+                                        text = book.title,
+                                        modifier = Modifier
+                                            .padding(3.dp)
+                                            .align(Alignment.CenterHorizontally),
+                                        fontSize = 15.sp
+                                    )
                                 }
-                                Text(text = book.title,
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally),
-                                    fontSize = 20.sp)
+
                             }
 
                         }
                     }
                 }
             }
-           Column {
+        }
+*/
+        Column(Modifier
+            .padding(top = 10.dp, bottom = 20.dp, start = 10.dp, end = 10.dp)
+        ) {
 
-               Text(text = "Hikayeler",
-                   modifier = Modifier.padding(10.dp),
-                   fontSize = 25.sp)
+            Text(
+                text = "Okuma Parçaları",
+                modifier = Modifier.padding(10.dp),
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Normal,
+                fontStyle = FontStyle.Italic
+            )
 
-               Row(
-                   Modifier
-                       .horizontalScroll(rememberScrollState())
-               ){
-                   for ((index, story) in storyList.withIndex()) {
-                       Row(
-                           modifier = Modifier
-                               .padding(5.dp)
+            Column(
+                Modifier
+                    .clip(RoundedCornerShape(5.dp))
+                    .verticalScroll(rememberScrollState())
+            ) {
+                storyList.forEachIndexed { index, story ->
+                    Row(
+                        modifier = Modifier
+                            .padding(5.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(10.dp))
+                                .clickable {
+                                    navController.navigate(route = "storydetails/" + index)
+                                }
+                        ) {
+                            Card(
+                                modifier = Modifier
+                                    .background(Color.White)
+                                    .fillMaxWidth(1f)
+                                    .padding(5.dp),
+                                colors = CardDefaults.cardColors(Color.Transparent)
+                            ) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.Center
+                                ) {
+                                    if (isConnectedToInternet()) {
+                                        val storyPainter =
+                                            rememberImagePainter(data = story.imageResource)
 
-                       ) {
+                                        Image(
+                                            painter = storyPainter,
+                                            modifier = Modifier
+                                                .padding(5.dp)
+                                                .wrapContentSize()
+                                                .clip(RoundedCornerShape(5.dp))
+                                                .size(150.dp),
+                                            contentDescription = null,
+                                            contentScale = ContentScale.Crop
+                                        )
+                                    } else {
+                                        Text(
+                                            text = "Lütfen internete bağlanınız",
+                                            modifier = Modifier
+                                                .padding(5.dp),
+                                            fontSize = 16.sp
+                                        )
+                                    }
 
-                           Column(modifier = Modifier
-                               .clickable {
-                                   navController.navigate(route = "storydetails/"+ index)
-                               }
-                           ) {
-                               Card(
-                                   modifier = Modifier
-                                       .background(Color.Transparent)
-                                       .padding(5.dp),
-                                   colors = CardDefaults.cardColors(Color.Transparent)
+                                    Text(
+                                        text = story.title,
+                                        modifier = Modifier
+                                            .padding(start = 5.dp),
+                                        fontSize = 15.sp
+                                    )
+                                }
 
-                               ) {
-                                   Image(
-                                       painter = painterResource(id = story.img),
-                                       modifier = Modifier
-                                           .padding(5.dp),
-                                       contentDescription = "img"
-                                   )
-
-                               }
-                               Text(text = story.title,
-                                   modifier = Modifier
-                                       .align(Alignment.CenterHorizontally),
-                                   fontSize = 20.sp)
-                           }
-
-                       }
-                   }
-               }
-           }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-@Preview
-@Composable
-fun PreviewBookLists() {
-
-    Books(navController = rememberNavController())
+fun isConnectedToInternet(): Boolean {
+    return true
 }

@@ -110,4 +110,7 @@ dependencies {
     //SwapableCard
     implementation ("me.saket.swipe:swipe:1.2.0")
 
+    //Coroutine Image Loader
+    implementation("io.coil-kt:coil-compose:1.3.2")
+
 }

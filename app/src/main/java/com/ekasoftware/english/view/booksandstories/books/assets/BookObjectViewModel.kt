@@ -1,3 +1,4 @@
+/*
 package com.ekasoftware.english.view.booksandstories.books.assets
 
 import androidx.compose.runtime.mutableStateListOf
@@ -14,4 +15,4 @@ class BookObjectViewModel : ViewModel() {
             bookList.add(book)
         }
     }
-}
+} */

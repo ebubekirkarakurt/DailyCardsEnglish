@@ -1,3 +1,4 @@
+/*
 package com.ekasoftware.english.view.booksandstories.books.assets
 
 import com.ekasoftware.english.R
@@ -16,4 +17,4 @@ class BookList {
 
         )
     }
-}
+}*/

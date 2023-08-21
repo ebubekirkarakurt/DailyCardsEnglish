@@ -1,5 +1,6 @@
 package com.ekasoftware.english.graph
 
+import Books
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -9,9 +10,7 @@ import androidx.navigation.navArgument
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.view.HomeScreen
 import com.ekasoftware.english.view.booksandstories.books.model.Book
-import com.ekasoftware.english.view.booksandstories.books.view.BookDetails
 import com.ekasoftware.english.view.translator.Translate
-import com.ekasoftware.english.view.booksandstories.books.view.Books
 import com.ekasoftware.english.view.booksandstories.stories.model.Story
 import com.ekasoftware.english.view.chatbot.ui.ChatScreen
 import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
@@ -48,7 +47,11 @@ fun SetupNavGraph(
         }*/
 
         composable(route = Screen.Books.route) {
-            Books(navController = navController)
+            Books(
+                navController = navController,
+                storyList = storyList,
+                bookList = booksList
+            )
         }
 
         composable(route = Screen.AddNote.route) {
@@ -89,7 +92,7 @@ fun SetupNavGraph(
             StoryDetails(navController = navController, storyList = storyList,index = index)
         }
 
-        composable(
+       /* composable(
             route = "${Screen.BookDetails.route}",
             arguments = listOf(
                 navArgument("id") {
@@ -100,7 +103,7 @@ fun SetupNavGraph(
         ) { backStackEntry ->
             val index = backStackEntry.arguments?.getInt("id") ?: 0
             BookDetails(navController = navController, booksList = booksList,index = index)
-        }
+        }*/
 
         composable(route = Screen.Translate.route) {
             Translate(navController = navController, viewModel = translatorViewModel)
