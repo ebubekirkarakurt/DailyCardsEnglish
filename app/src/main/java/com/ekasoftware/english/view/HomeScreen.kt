@@ -39,6 +39,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -71,7 +72,7 @@ fun HomeScreen(navController: NavHostController) {
             )
             {
 
-                Image(painter = painterResource(id = R.drawable.topbar),
+                Image(painter = painterResource(id = R.drawable.aloenglish),
                     contentDescription = "")
             }
             Column {
@@ -89,7 +90,7 @@ fun MainCard(navController: NavHostController) {
     Box(modifier = Modifier.padding(15.dp)) {
         Box(modifier = Modifier) {
             Image(
-                painter = painterResource(id = R.drawable.reboot),
+                painter = painterResource(id = R.drawable.olabotimage),
                 contentDescription = "maincard"
             )
             Box(modifier = Modifier
@@ -110,7 +111,8 @@ fun MainCard(navController: NavHostController) {
                     )
                 ) {
 
-                    Text(text = "Reboot ile konus")
+                    Text(text = "OLAbot ile konus",
+                        fontStyle = FontStyle.Italic)
 
                     Icon(
                         imageVector = Icons.Filled.KeyboardArrowRight,

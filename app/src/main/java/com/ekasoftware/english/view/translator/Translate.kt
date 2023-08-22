@@ -85,7 +85,7 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
 
         Text(modifier = Modifier
             .padding(5.dp),
-            text = "MyEnglishApp Translate"
+            text = "OLA  ~  English Translator"
         )
     }
 

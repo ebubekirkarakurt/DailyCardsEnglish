@@ -117,7 +117,7 @@ fun ChatTopBar(navController: NavHostController) {
                     contentDescription = "img",
                     Modifier.size(80.dp)
                 )
-                Text(text = "Reboot",
+                Text(text = "OLAbot",
                     modifier = Modifier,
                     fontSize = 25.sp)
             }

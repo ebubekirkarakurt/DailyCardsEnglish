@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -38,7 +39,7 @@ fun VocListScreen(navController: NavHostController,) {
         R.drawable.yoltarifi, R.drawable.havadurumu,
         R.drawable.gunlukaktivite,R.drawable.alisveris,
         R.drawable.saglik,R.drawable.rutinler,
-                R.drawable.tatilvegezi,
+        R.drawable.tatilvegezi
     )
 
     val vocListTitles = listOf(
@@ -95,10 +96,15 @@ fun VocListScreen(navController: NavHostController,) {
                 }
             }
         )
-        /* Image(painter = painterResource(id = R.drawable.reboot),
+
+         Image(painter = painterResource(id = R.drawable.newbonus),
             modifier = Modifier
+                .padding(top= 10.dp)
+                .size(300.dp)
+                .align(Alignment.CenterHorizontally)
+                .clickable {  navController.navigate("AllWordScreen/" + 4) }
                 .fillMaxWidth(),
-            contentDescription = "")*/
+            contentDescription = "")
 
     }
 

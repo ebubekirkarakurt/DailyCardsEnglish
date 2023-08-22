@@ -10,7 +10,7 @@ data class QABotData(
     companion object {
         fun getDefault(): QABotData {
             return QABotData(
-                merhaba = "Merhaba! Ben Reboot. Size nasıl yardımcı olabilirim?",
+                merhaba = "Merhaba! Ben OLAbot. Size nasıl yardımcı olabilirim?",
                 ingilizceTemel ="İngilizce 3 temelden oluşur ve bunlar;" +
                         "Okuma: İngilizce öğrenirken ilk adım, çeşitli metinleri okuma yeteneğinizi geliştirmektir.\n" +
                         "Yazma: Kendi düşüncelerinizi ve fikirlerinizi İngilizce olarak ifade edebilmek önemli bir beceridir.\n" +
