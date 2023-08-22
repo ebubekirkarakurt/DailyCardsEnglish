@@ -1,6 +1,6 @@
-package com.ekasoftware.english.view.booksandstories.books.network
+package com.ekasoftware.english.view.reading.books.network
 
-import com.ekasoftware.english.view.booksandstories.books.model.Book
+import com.ekasoftware.english.view.reading.books.model.Book
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

@@ -1,6 +1,6 @@
-package com.ekasoftware.english.view.booksandstories.stories.model
+package com.ekasoftware.english.view.reading.books.model
 
-data class Story(
+data class Book(
     var id : Int,
     var title : String,
     var ENGtext : String,

@@ -9,13 +9,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.view.HomeScreen
-import com.ekasoftware.english.view.booksandstories.books.model.Book
+import com.ekasoftware.english.view.reading.books.model.Book
 import com.ekasoftware.english.view.translator.Translate
-import com.ekasoftware.english.view.booksandstories.stories.model.Story
 import com.ekasoftware.english.view.chatbot.ui.ChatScreen
 import com.ekasoftware.english.view.mynotes.ui.AddNote.AddNote
 import com.ekasoftware.english.view.mynotes.ui.UpdateNote.UpdateNote
-import com.ekasoftware.english.view.booksandstories.stories.view.StoryDetails
+import com.ekasoftware.english.view.reading.books.view.BookDetails
 import com.ekasoftware.english.view.tense.model.Tense
 import com.ekasoftware.english.view.tense.view.TenseScreen
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
@@ -31,7 +30,6 @@ fun SetupNavGraph(
     wordList : List<Word>,
     tenseList : List<Tense>,
     booksList : List<Book>,
-    storyList : List<Story>
 ) {
     NavHost(
         navController = navController,
@@ -49,7 +47,6 @@ fun SetupNavGraph(
         composable(route = Screen.Books.route) {
             Books(
                 navController = navController,
-                storyList = storyList,
                 bookList = booksList
             )
         }
@@ -89,7 +86,7 @@ fun SetupNavGraph(
             )
         ){ backStackEntry ->
             val index = backStackEntry.arguments?.getInt("id") ?: 0
-            StoryDetails(navController = navController, storyList = storyList,index = index)
+            BookDetails(navController = navController, bookList = booksList ,index = index)
         }
 
        /* composable(

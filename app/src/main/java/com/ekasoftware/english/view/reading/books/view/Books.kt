@@ -1,7 +1,6 @@
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,7 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -36,19 +34,16 @@ import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.ui.theme.MyGray
-import com.ekasoftware.english.view.booksandstories.books.model.Book
-import com.ekasoftware.english.view.booksandstories.stories.model.Story
+import com.ekasoftware.english.view.reading.books.model.Book
 
 @Composable
 fun Books(
     navController: NavHostController,
-    storyList: List<Story>,
     bookList: List<Book>
 ) {
     Column {
         BooksList(
             navController = navController,
-            storyList = storyList,
             bookList = bookList
         )
     }
@@ -57,7 +52,6 @@ fun Books(
 @Composable
 fun BooksList(
     navController: NavHostController,
-    storyList: List<Story>,
     bookList: List<Book>
 ) {
 
@@ -164,7 +158,7 @@ fun BooksList(
                     .clip(RoundedCornerShape(5.dp))
                     .verticalScroll(rememberScrollState())
             ) {
-                storyList.forEachIndexed { index, story ->
+                bookList.forEachIndexed { index, story ->
                     Row(
                         modifier = Modifier
                             .padding(5.dp)
@@ -206,7 +200,7 @@ fun BooksList(
                                             text = "Lütfen internete bağlanınız",
                                             modifier = Modifier
                                                 .padding(5.dp),
-                                            fontSize = 16.sp
+                                            fontSize = 20.sp
                                         )
                                     }
 

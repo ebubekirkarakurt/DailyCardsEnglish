@@ -1,8 +1,7 @@
-package com.ekasoftware.english.view.booksandstories.stories.view
+package com.ekasoftware.english.view.reading.books.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,13 +13,18 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -33,13 +37,13 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.view.booksandstories.stories.model.Story
-import com.ekasoftware.english.view.booksandstories.texttospeech.TextToSpeechViewModel
+import com.ekasoftware.english.view.reading.books.model.Book
+import com.ekasoftware.english.view.reading.texttospeech.TextToSpeechViewModel
 
 @Composable
-fun StoryDetails(
+fun BookDetails(
     navController: NavHostController,
-    storyList: List<Story>,
+    bookList : List<Book>,
     index: Int?
 ) {
 
@@ -49,8 +53,9 @@ fun StoryDetails(
     val state = speechViewModel.state.value
     val context = LocalContext.current
 
+    var isIconChanged by remember { mutableStateOf(false) }
 
-    storyList.forEachIndexed { index, story ->
+    bookList.forEachIndexed { index, book ->
         if (newIndex == index) {
             Column(
                 modifier = Modifier
@@ -84,6 +89,7 @@ fun StoryDetails(
                             )
                         }
 
+
                         Button(
                             modifier = Modifier
                                 .padding(
@@ -93,17 +99,19 @@ fun StoryDetails(
                                     end = 25.dp
                                 ),
                             onClick = {
-                                speechViewModel.textToSpeech(context, story.ENGtext)
+                                isIconChanged = !isIconChanged
+                                if (isIconChanged) speechViewModel.textToSpeech(context, book.ENGtext)  else speechViewModel.stopTextToSpeech()
                             },
                             enabled = state.isButtonEnabled
 
                         ) {
-                            Text(text = "speak")
+                            Icon(imageVector = if (isIconChanged) Icons.Default.Done else Icons.Default.Add,
+                                contentDescription = null)
                         }
                     }
 
 
-                    val painter = rememberImagePainter(data = story.imageResource )
+                    val painter = rememberImagePainter(data = book.imageResource )
 
                     Image(painter = painter,
                         modifier = Modifier
@@ -123,7 +131,7 @@ fun StoryDetails(
                 ) {
 
                     Text(
-                        text = story.title,
+                        text = book.title,
                         modifier = Modifier.padding(10.dp),
                         fontSize = 18.sp,
                         fontWeight = FontWeight.SemiBold
@@ -138,8 +146,8 @@ fun StoryDetails(
                         .padding(16.dp)
                 ) {
                     Text(
-                        text = story.ENGtext,
-                        fontSize = 16.sp
+                        text = book.ENGtext,
+                        fontSize = 20.sp
                     )
                 }
 
@@ -151,8 +159,8 @@ fun StoryDetails(
                         .padding(16.dp)
                 ) {
                     Text(
-                        text = story.TRtext,
-                        fontSize = 16.sp
+                        text = book.TRtext,
+                        fontSize = 20.sp
                     )
                 }
             }

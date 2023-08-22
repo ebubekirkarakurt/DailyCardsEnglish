@@ -1,13 +1,12 @@
-package com.ekasoftware.english.view.booksandstories.books.viewmodel
+package com.ekasoftware.english.view.reading.books.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ekasoftware.english.view.booksandstories.books.model.Book
-import com.ekasoftware.english.view.booksandstories.books.network.BooksApiService
-import com.ekasoftware.english.view.vocablarylist.allWords.network.ApiService
+import com.ekasoftware.english.view.reading.books.model.Book
+import com.ekasoftware.english.view.reading.books.network.BooksApiService
 import kotlinx.coroutines.launch
 
 class BooksViewModel : ViewModel() {

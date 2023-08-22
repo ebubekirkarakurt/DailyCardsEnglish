@@ -78,15 +78,11 @@ fun ChatTopBar(navController: NavHostController) {
     var answer by remember { mutableStateOf("") }
 
     var userButtons = listOf(
-        "merhaba",
-        "nasılsınız",
-        "hava nasıl"
+        "Merhaba, ingilizcemi nasıl geliştirebilirim?"
     )
 
     var botAnswers = listOf(
-        botData.merhaba,
-        botData.nasilsiniz,
-        botData.havaNasil
+        botData.ingilizceTemel
     )
 
 
@@ -213,15 +209,15 @@ fun Answer(answer: String) {
     var secondanswer by remember { mutableStateOf("") }
 
     var userButtons2 = listOf(
-        "çalışma",
-        "çalışma",
-        "çalışma"
+        "Okuma becerimi nasıl geliştirebilirim?",
+        "Kelime haznemi nasıl genişletirebilirim?",
+        "Dinleme becerimi nasıl geliştirebilirim?"
     )
 
     var botAnswers2 = listOf(
-        botData.merhaba,
-        botData.nasilsiniz,
-        botData.havaNasil
+        botData.listening,
+        botData.vocablary,
+        botData.listening
     )
 
     Card(

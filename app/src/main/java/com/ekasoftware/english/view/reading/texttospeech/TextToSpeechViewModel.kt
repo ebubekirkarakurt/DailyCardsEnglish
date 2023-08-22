@@ -1,4 +1,4 @@
-package com.ekasoftware.english.view.booksandstories.texttospeech
+package com.ekasoftware.english.view.reading.texttospeech
 
 import android.content.Context
 import android.speech.tts.TextToSpeech
