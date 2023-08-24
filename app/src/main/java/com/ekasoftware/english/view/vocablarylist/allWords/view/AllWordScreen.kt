@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -36,6 +37,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.CorrectColor
 import com.ekasoftware.english.ui.theme.UiColor
 import com.ekasoftware.english.ui.theme.WrongColor
@@ -50,176 +52,196 @@ import me.saket.swipe.SwipeableActionsBox
 
 
 @Composable
-fun AllWordScreen(navController: NavHostController,
-                  wordList :  List<Word>,
-                  itemIndex : Int
+fun AllWordScreen(
+    navController: NavHostController,
+    wordList: List<Word>,
+    itemIndex: Int
 ) {
+    statusBarColor(statusBarColor = Color.White)
 
-        val vocRepository = VocablaryRepository(VocablaryDatabase(LocalContext.current.applicationContext))
-        val viewModel: VocablaryViewModel = viewModel(
-            factory = VocablaryViewModelProviderFactory(app = LocalContext.current.applicationContext
+    val vocRepository =
+        VocablaryRepository(VocablaryDatabase(LocalContext.current.applicationContext))
+    val viewModel: VocablaryViewModel = viewModel(
+        factory = VocablaryViewModelProviderFactory(
+            app = LocalContext.current.applicationContext
                     as Application,
-                vocRepository = vocRepository)
+            vocRepository = vocRepository
         )
+    )
 
-        val screenTitle = listOf(
-            "Ülkeler", "Yiyecekler", "Yönler",
-            "Hava Durumu/Mevsimler", "Günlük Aktivite",
-            "Alış-Veriş", "Sağlık", "Alışkanlıklar", "Tatil"
-        )
+    val screenTitle = listOf(
+        "Ülkeler", "Yiyecekler", "Yönler",
+        "Hava Durumu/Mevsimler", "Günlük Aktivite",
+        "Alış-Veriş", "Sağlık", "Alışkanlıklar", "Tatil", "Bonus Kelimeler"
+    )
 
 
-        Column(modifier = Modifier
+    Column(
+        modifier = Modifier
             .fillMaxSize()
             .background(Color.White)
-        ){
+    ) {
 
-            Row(
-                horizontalArrangement = Arrangement.Start,
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth()
-            ){
+        Row(
+            horizontalArrangement = Arrangement.Start,
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ) {
 
-                Button(modifier = Modifier
+            Button(
+                modifier = Modifier
                     .background(Color.Transparent)
                     .padding(horizontal = 5.dp, vertical = 10.dp),
-                     onClick = { navController.navigate(Screen.VocListScreen.route) },
-                    colors = ButtonDefaults.outlinedButtonColors(Color.Transparent)
+                onClick = { navController.navigate(Screen.VocListScreen.route) },
+                colors = ButtonDefaults.outlinedButtonColors(Color.Transparent)
+            )
+            {
+                Icon(
+                    imageVector = Icons.Filled.KeyboardArrowLeft,
+                    contentDescription = "backbutton"
                 )
-                {
-                    Icon(imageVector = Icons.Filled.KeyboardArrowLeft, contentDescription = "backbutton")
-                }
-
-                Text(text = screenTitle[itemIndex],
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.Bold)
             }
 
-
-            LazyColumn(modifier = Modifier.padding(10.dp)
-            ){
-                itemsIndexed(items = wordList) { index, item ->
-
-                    val ok = SwipeAction(
-                        onSwipe = {
-                                val voc = Vocablary(
-                                    index,
-                                    item.ENG,
-                                    item.TR
-                                )
-
-                                viewModel.deleteVoc(voc)
-                        },
-                        icon = {
-                                Row(
-                                    verticalAlignment = Alignment.CenterVertically,
-                                    horizontalArrangement = Arrangement.Center
-                                ){
-                                    Text(text = "Biliyorum",
-                                        modifier = Modifier
-                                            .padding(5.dp)
-                                    )
-
-                                    Icon(imageVector = Icons.Filled.Check,
-                                        contentDescription = "",
-                                        modifier = Modifier.padding(10.dp)
-                                    )
-                                }
-                        },
-                        background = CorrectColor
-                    )
-
-                    val nope = SwipeAction(
-                        onSwipe = {
-                                val voc = Vocablary(
-                                    index,
-                                    item.ENG,
-                                    item.TR
-                                )
-
-                                viewModel.addVoc(voc)
-
-                        },
-                        icon = {
-
-                                Row(
-                                    verticalAlignment = Alignment.CenterVertically,
-                                    horizontalArrangement = Arrangement.Center
-                                ){
-                                    Icon(imageVector = Icons.Filled.Close,
-                                        contentDescription = "",
-                                        modifier = Modifier.padding(10.dp)
-                                    )
-                                    Text(text = "Bilmiyorum",
-                                        modifier = Modifier
-                                            .padding(5.dp)
-                                    )
-                                }
-
-                        },
-                        background = WrongColor
-                    )
+            Text(
+                text = screenTitle[itemIndex],
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
 
 
-                    if(item.categoryId == itemIndex+1) {
-                        SwipeableActionsBox(
-                            startActions = listOf(ok),
-                            endActions = listOf(nope)
-                        ){
-                            Card(
+        LazyColumn(
+            modifier = Modifier.padding(10.dp)
+        ) {
+            itemsIndexed(items = wordList) { index, item ->
+
+                val ok = SwipeAction(
+                    onSwipe = {
+                        val voc = Vocablary(
+                            index,
+                            item.ENG,
+                            item.TR
+                        )
+
+                        viewModel.deleteVoc(voc)
+                    },
+                    icon = {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.Center
+                        ) {
+                            Text(
+                                text = "Biliyorum",
                                 modifier = Modifier
-                                    .padding(8.dp, 4.dp)
-                                    .fillMaxWidth()
-                                    .background(Color.Transparent)
-                                    .shadow(
-                                        10.dp,
-                                        ambientColor = Color.Black, spotColor = UiColor)
-                                    .height(110.dp),
-                                shape = RoundedCornerShape(8.dp),
-                                colors = CardDefaults.cardColors(
-                                    containerColor = Color.White,
-                                    contentColor = Color.Black
-                                )
-                            ) {
+                                    .padding(5.dp)
+                            )
 
-                                Column(
-                                    horizontalAlignment = Alignment.CenterHorizontally,
-                                    verticalArrangement = Arrangement.Center,
+                            Icon(
+                                imageVector = Icons.Filled.Check,
+                                contentDescription = "",
+                                modifier = Modifier.padding(10.dp)
+                            )
+                        }
+                    },
+                    background = CorrectColor
+                )
+
+                val nope = SwipeAction(
+                    onSwipe = {
+                        val voc = Vocablary(
+                            index,
+                            item.ENG,
+                            item.TR
+                        )
+
+                        viewModel.addVoc(voc)
+
+                    },
+                    icon = {
+
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.Center
+                        ) {
+                            Icon(
+                                imageVector = Icons.Filled.Close,
+                                contentDescription = "",
+                                modifier = Modifier.padding(10.dp)
+                            )
+                            Text(
+                                text = "Bilmiyorum",
+                                modifier = Modifier
+                                    .padding(5.dp)
+                            )
+                        }
+
+                    },
+                    background = WrongColor
+                )
+
+
+                if (item.categoryId == itemIndex + 1) {
+                    SwipeableActionsBox(
+                        startActions = listOf(ok),
+                        endActions = listOf(nope)
+                    ) {
+                        Card(
+                            modifier = Modifier
+                                .padding(8.dp, 4.dp)
+                                .fillMaxWidth()
+                                .wrapContentHeight()
+                                .background(Color.Transparent)
+                                .shadow(
+                                    10.dp,
+                                    ambientColor = Color.Black, spotColor = UiColor
+                                )
+                                .height(110.dp),
+                            shape = RoundedCornerShape(8.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color.White,
+                                contentColor = Color.Black
+                            )
+                        ) {
+
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                                verticalArrangement = Arrangement.Center,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .wrapContentHeight()
+                                    .padding(10.dp)
+                                    .weight(0.8f)
+                            ) {
+                                Text(
+                                    text = item.ENG,
                                     modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(10.dp)
-                                        .weight(0.8f)
-                                ) {
-                                    Text(
-                                        text = item.ENG,
-                                        modifier = Modifier
-                                            .align(Alignment.Start)
-                                            .padding(10.dp),
-                                        fontWeight = FontWeight.Bold,
-                                        fontSize = 20.sp
-                                    )
-                                    Text(
-                                        text = item.TR,
-                                        modifier = Modifier
-                                            .align(Alignment.End)
-                                            .padding(4.dp),
-                                        fontSize = 16.sp
-                                    )
-                                }
+                                        .align(Alignment.Start)
+                                        .padding(10.dp),
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 17.sp
+                                )
+                                Text(
+                                    text = item.TR,
+                                    modifier = Modifier
+                                        .align(Alignment.End)
+                                        .padding(4.dp),
+                                    fontSize = 13.sp
+                                )
                             }
                         }
+                    }
                 }
             }
         }
     }
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
 fun PreviewAllWordScreen() {
     AllWordScreen(
         rememberNavController(),
-        wordList =  listOf(
+        wordList = listOf(
             Word(
                 "Germany",
                 "Almanya",
@@ -233,12 +255,12 @@ fun PreviewAllWordScreen() {
                 2
             ),
             Word(
-                "Hello!",
-                "Merhaba",
+                "Merhaba benim adom ali cabbar ua senin ismin nedir çok yakışıklısın!",
+                "Merhaba benim adom ali cabbar ua senin ismin nedir çok yakışıklısın",
                 1,
                 2
             )
         ),
-    itemIndex = 1
+        itemIndex = 1
     )
 }

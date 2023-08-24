@@ -33,6 +33,7 @@ import androidx.navigation.NavHostController
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.TenseColor1
 import com.ekasoftware.english.ui.theme.TenseColor2
 import com.ekasoftware.english.ui.theme.TenseColor3
@@ -52,6 +53,9 @@ fun TenseScreen(navController: NavHostController, tenseList: List<Tense>) {
         TenseColor4,
         TenseColor5,
     )
+
+    statusBarColor(statusBarColor = Color.White)
+
     Column {
 
         Button(modifier = Modifier

@@ -8,7 +8,9 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.ekasoftware.english.graph.SetupNavGraph
@@ -18,6 +20,7 @@ import com.ekasoftware.english.view.mynotes.data.Note
 import com.ekasoftware.english.view.tense.viewmodel.TenseViewModel
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
 import com.ekasoftware.english.view.vocablarylist.allWords.viewmodel.WordsViewModel
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 class MainActivity : ComponentActivity() {
@@ -41,14 +44,17 @@ class MainActivity : ComponentActivity() {
             comment = "Yorum"
         )
 
-
         setContent {
 
             DailyCardsEnglishTheme {
+
+                statusBarColor(statusBarColor = Color.White)
+
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.onPrimary
                 ) {
+
                     navController = rememberNavController()
 
                     val translatorViewModel: TranslatorViewModel by viewModels()
@@ -62,7 +68,6 @@ class MainActivity : ComponentActivity() {
 
                     val booksList = booksViewModel.bookListResponse
                     booksViewModel.getBookList()
-
 
                     SetupNavGraph(
                         navController = navController,
@@ -78,3 +83,14 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
+fun statusBarColor(statusBarColor : Color){
+    val systemUiController = rememberSystemUiController()
+
+    systemUiController.setStatusBarColor(
+        color = statusBarColor
+    )
+
+    systemUiController.setNavigationBarColor(
+        color = Color.White)
+}

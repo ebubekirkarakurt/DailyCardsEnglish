@@ -33,20 +33,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.paint
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
-import com.ekasoftware.english.ui.theme.UiColor
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.view.mynotes.model.NoteDatabase
 import com.ekasoftware.english.view.mynotes.repository.NoteRepository
 import com.ekasoftware.english.view.mynotes.ui.NoteList.NoteList
@@ -57,11 +53,11 @@ import com.ekasoftware.english.view.mynotes.viewmodel.NotesViewModel
 @Composable
 fun HomeScreen(navController: NavHostController) {
 
+    statusBarColor(statusBarColor = Color.White)
 
     Surface(modifier = Modifier
         .fillMaxSize()
     ) {
-
        Column {
             Row(
                 modifier = Modifier
@@ -72,7 +68,7 @@ fun HomeScreen(navController: NavHostController) {
             )
             {
 
-                Image(painter = painterResource(id = R.drawable.aloenglish),
+                Image(painter = painterResource(id = R.drawable.olaenglisgtopbar),
                     contentDescription = "")
             }
             Column {

@@ -40,6 +40,7 @@ import androidx.navigation.NavHostController
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.CorrectColor
 import com.ekasoftware.english.ui.theme.UiColor
 import com.ekasoftware.english.ui.theme.WrongColor
@@ -60,6 +61,8 @@ fun MemorizationScreen(navController: NavHostController) {
         factory = VocablaryViewModelProviderFactory(app = LocalContext.current.applicationContext as Application,
             vocRepository = vocRepository)
     )
+
+    statusBarColor(statusBarColor = Color.White)
 
     var randomVocs by remember { mutableStateOf(emptyList<Vocablary>()) }
 

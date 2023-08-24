@@ -31,27 +31,32 @@ import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 
 @Composable
-fun VocListScreen(navController: NavHostController,) {
+fun VocListScreen(navController: NavHostController) {
+
+    statusBarColor(statusBarColor = Color.White)
+
     val vocListImages = listOf(
-        R.drawable.bayraklar ,R.drawable.meyveler,
+        R.drawable.bayraklar, R.drawable.meyveler,
         R.drawable.yoltarifi, R.drawable.havadurumu,
-        R.drawable.gunlukaktivite,R.drawable.alisveris,
-        R.drawable.saglik,R.drawable.rutinler,
-        R.drawable.tatilvegezi
+        R.drawable.gunlukaktivite, R.drawable.alisveris,
+        R.drawable.saglik, R.drawable.rutinler,
+        R.drawable.tatilvegezi, R.drawable.newbonus
     )
 
     val vocListTitles = listOf(
-        "Ülkeler","Meyve-Sebze", "Yönler", "Hava Durumu/Mevsimler",
+        "Ülkeler", "Meyve-Sebze", "Yönler", "Hava Durumu/Mevsimler",
         "Günlük Aktivite", "Alış-Veriş", "Sağlık", "Rutinler", "Tatil ve GEzi"
     )
 
-    Column(modifier = Modifier.fillMaxSize(1f)){
+    Column(modifier = Modifier.fillMaxSize(1f)) {
 
-        Button(modifier = Modifier
-            .background(Color.Transparent)
-            .padding(horizontal = 5.dp, vertical = 10.dp),
+        Button(
+            modifier = Modifier
+                .background(Color.Transparent)
+                .padding(horizontal = 5.dp, vertical = 10.dp),
             onClick = { navController.navigate(Screen.Home.route) },
             colors = ButtonDefaults.outlinedButtonColors(Color.Transparent)
         )
@@ -73,8 +78,10 @@ fun VocListScreen(navController: NavHostController,) {
             content = {
                 items(vocListTitles.size) { index ->
 
-                    Row (verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.Center){
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Center
+                    ) {
 
                         Box(
                             Modifier
@@ -82,7 +89,7 @@ fun VocListScreen(navController: NavHostController,) {
                                 .align(Alignment.CenterVertically)
                                 .clickable {
                                     navController.navigate("AllWordScreen/" + index)
-                                }){
+                                }) {
                             Image(
                                 painter = painterResource(id = vocListImages[index]),
                                 contentDescription = "icons",
@@ -97,20 +104,20 @@ fun VocListScreen(navController: NavHostController,) {
             }
         )
 
-         Image(painter = painterResource(id = R.drawable.newbonus),
+        Image(painter = painterResource(id = R.drawable.newbonus),
             modifier = Modifier
-                .padding(top= 10.dp)
+                .padding(top = 0.dp)
                 .size(300.dp)
                 .align(Alignment.CenterHorizontally)
-                .clickable {  navController.navigate("AllWordScreen/" + 4) }
+                .clickable { navController.navigate("AllWordScreen/" + 9) }
                 .fillMaxWidth(),
             contentDescription = "")
 
     }
 
 
-
 }
+
 @Preview(showBackground = true)
 @Composable
 fun VocListScreenPreview() {

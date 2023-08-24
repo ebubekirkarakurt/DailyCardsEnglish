@@ -32,7 +32,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -42,17 +41,15 @@ import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.GrayLight
-import com.ekasoftware.english.ui.theme.LightBlue
-import com.ekasoftware.english.ui.theme.LightPurple
-import com.ekasoftware.english.ui.theme.MyBlack
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
+
 
 @Composable
 fun Translate(navController: NavHostController, viewModel: TranslatorViewModel) {
 
     Column(modifier = Modifier.fillMaxSize()) {
-
         TranslateComment(navController = navController, viewModel = viewModel)
         TranslateLanguage(viewModel)
         TranslateResult(viewModel = viewModel)
@@ -65,6 +62,8 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
 
     val state = viewModel.state.value
     val context = LocalContext.current
+
+    statusBarColor(statusBarColor = Color.White)
 
     Row(modifier = Modifier
         .padding(horizontal = 0.dp, vertical = 10.dp),

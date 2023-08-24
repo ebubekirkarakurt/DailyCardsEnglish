@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.TenseColor1
 import com.ekasoftware.english.ui.theme.TenseColor2
 import com.ekasoftware.english.ui.theme.TenseColor3
@@ -38,6 +39,7 @@ import com.ekasoftware.english.view.mynotes.viewmodel.NotesViewModel
 
 @Composable
 fun NoteList(navController: NavHostController, viewModel: NotesViewModel) {
+    statusBarColor(statusBarColor = Color.White)
 
     val notes: List<Note> by viewModel.getAllNote().observeAsState(initial = emptyList())
     NoteListItems(navController, notes)

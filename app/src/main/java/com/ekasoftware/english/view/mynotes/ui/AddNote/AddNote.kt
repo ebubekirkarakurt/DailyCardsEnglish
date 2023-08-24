@@ -32,6 +32,8 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
+import com.ekasoftware.english.ui.theme.ChatBotScreenColor
 import com.ekasoftware.english.ui.theme.CorrectColor
 import com.ekasoftware.english.view.mynotes.data.Note
 import com.ekasoftware.english.view.mynotes.model.NoteDatabase
@@ -41,6 +43,7 @@ import com.ekasoftware.english.view.mynotes.viewmodel.NotesViewModel
 
 @Composable
 fun AddNote(navController: NavHostController) {
+    statusBarColor(statusBarColor = Color.White)
     AddNoteItems(navController)
 }
 

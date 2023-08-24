@@ -33,14 +33,19 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.MyGray
 import com.ekasoftware.english.view.reading.books.model.Book
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @Composable
 fun Books(
     navController: NavHostController,
     bookList: List<Book>
 ) {
+
+    statusBarColor(statusBarColor = MyGray)
+
     Column {
         BooksList(
             navController = navController,

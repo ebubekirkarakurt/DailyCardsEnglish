@@ -1,5 +1,6 @@
 package com.ekasoftware.english.view.reading.books.view
 
+import android.widget.Button
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -16,6 +17,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.rounded.PlayArrow
+import androidx.compose.material.icons.twotone.Share
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
@@ -30,13 +33,16 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
+import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.view.reading.books.model.Book
 import com.ekasoftware.english.view.reading.texttospeech.TextToSpeechViewModel
 
@@ -54,6 +60,8 @@ fun BookDetails(
     val context = LocalContext.current
 
     var isIconChanged by remember { mutableStateOf(false) }
+
+    statusBarColor(statusBarColor = Color.White)
 
     bookList.forEachIndexed { index, book ->
         if (newIndex == index) {
@@ -102,11 +110,24 @@ fun BookDetails(
                                 isIconChanged = !isIconChanged
                                 if (isIconChanged) speechViewModel.textToSpeech(context, book.ENGtext)  else speechViewModel.stopTextToSpeech()
                             },
-                            enabled = state.isButtonEnabled
+                            enabled = state.isButtonEnabled,
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Transparent,
+                                contentColor = Color.Black
+                            )
 
                         ) {
-                            Icon(imageVector = if (isIconChanged) Icons.Default.Done else Icons.Default.Add,
-                                contentDescription = null)
+
+                            Icon(
+                                painter = painterResource(
+                                    id = if (isIconChanged) {
+                                        R.drawable.pause
+                                    } else {
+                                        R.drawable.play
+                                    }
+                                ),
+                                contentDescription = null
+                            )
                         }
                     }
 

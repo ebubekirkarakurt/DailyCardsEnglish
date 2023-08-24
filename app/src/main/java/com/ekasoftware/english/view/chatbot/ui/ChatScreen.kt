@@ -49,8 +49,12 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.ChatBotScreenColor
+import com.ekasoftware.english.ui.theme.MyGray
+import com.ekasoftware.english.ui.theme.UiColor
 import com.ekasoftware.english.view.chatbot.data.QABotData
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -85,6 +89,7 @@ fun ChatTopBar(navController: NavHostController) {
         botData.ingilizceTemel
     )
 
+    statusBarColor(statusBarColor = ChatBotScreenColor)
 
     Column {
         TopAppBar(

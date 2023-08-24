@@ -41,6 +41,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.wear.compose.material.LocalContentColor
 import com.ekasoftware.english.assets.Screen
+import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.CorrectColor
 import com.ekasoftware.english.ui.theme.WrongColor
 import com.ekasoftware.english.view.mynotes.data.Note
@@ -56,6 +57,9 @@ fun UpdateNote(navController: NavHostController,
                comment: String?
 
 ) {
+
+    statusBarColor(statusBarColor = Color.White)
+
     UpdateNoteItems(
         navController = navController,
         id = id,

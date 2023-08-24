@@ -9,14 +9,14 @@ interface ApiService {
     @GET("/")
     suspend fun getMovies() : List<Word>
 
-    //https://node-api-vercel-x539-myj77iom4-ebubekirkarakurt.vercel.app/
+    //https://node-api-vercel-lake.vercel.app/
 
     companion object {
         var apiService: ApiService? = null
         fun getInstance() : ApiService {
             if (apiService == null) {
                 apiService = Retrofit.Builder()
-                    .baseUrl("https://node-api-vercel-x539-myj77iom4-ebubekirkarakurt.vercel.app")
+                    .baseUrl("https://node-api-vercel-lake.vercel.app/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build().create(ApiService::class.java)
             }
