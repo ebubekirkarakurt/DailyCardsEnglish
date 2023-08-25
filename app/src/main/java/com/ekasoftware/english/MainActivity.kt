@@ -29,9 +29,9 @@ class MainActivity : ComponentActivity() {
 
     private lateinit var note: Note
 
-    val wordViewModel by viewModels<WordsViewModel>()
-    val tenseViewModel by viewModels<TenseViewModel>()
-    val booksViewModel by viewModels<BooksViewModel>()
+    private val wordViewModel by viewModels<WordsViewModel>()
+    private val tenseViewModel by viewModels<TenseViewModel>()
+    private val booksViewModel by viewModels<BooksViewModel>()
 
 
     @SuppressLint("CoroutineCreationDuringComposition")

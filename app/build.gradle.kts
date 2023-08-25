@@ -116,7 +116,4 @@ dependencies {
     //For Status Bar Color
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 
-    //Admob
-    implementation ("com.google.android.gms:play-services-ads:22.0.0")
-
 }
