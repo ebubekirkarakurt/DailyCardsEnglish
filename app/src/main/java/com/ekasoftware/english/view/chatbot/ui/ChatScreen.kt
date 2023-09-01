@@ -91,7 +91,7 @@ fun ChatTopBar(navController: NavHostController) {
 
     statusBarColor(statusBarColor = ChatBotScreenColor)
 
-    Column {
+    Column(Modifier.background(ChatBotScreenColor)) {
         TopAppBar(
             title = { },
             modifier = Modifier.background(Color.Blue),
@@ -114,9 +114,12 @@ fun ChatTopBar(navController: NavHostController) {
         )
 
         Row (horizontalArrangement = Arrangement.Center,
-            modifier = Modifier.fillMaxWidth(1f)
+            modifier = Modifier
+                .background(ChatBotScreenColor)
+                .fillMaxWidth(1f)
         ){
-            Column {
+            Column(modifier = Modifier
+                .background(ChatBotScreenColor)) {
                 Image(
                     painter = painterResource(id = R.drawable.robot2),
                     contentDescription = "img",
@@ -131,6 +134,7 @@ fun ChatTopBar(navController: NavHostController) {
         }
 
         Surface(modifier = Modifier
+            .background(ChatBotScreenColor)
             .fillMaxSize(1f)
             .padding(top = 50.dp)
             .shadow(
@@ -141,7 +145,7 @@ fun ChatTopBar(navController: NavHostController) {
         ) {
             Column(
                 modifier = Modifier
-                    .background(Color.Transparent)
+                    .background(Color.White)
                     .verticalScroll(rememberScrollState())
                     .fillMaxSize()
                     .padding(top = 25.dp)

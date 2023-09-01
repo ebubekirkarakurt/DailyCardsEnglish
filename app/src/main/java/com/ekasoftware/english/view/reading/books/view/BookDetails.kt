@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -43,6 +44,7 @@ import coil.compose.rememberImagePainter
 import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.statusBarColor
+import com.ekasoftware.english.ui.theme.MyGray
 import com.ekasoftware.english.view.reading.books.model.Book
 import com.ekasoftware.english.view.reading.texttospeech.TextToSpeechViewModel
 
@@ -67,11 +69,10 @@ fun BookDetails(
         if (newIndex == index) {
             Column(
                 modifier = Modifier
-                    .padding(end = 15.dp, top = 10.dp)
                     .background(Color.White)
                     .fillMaxSize(),
             ) {
-                Column {
+                Column(Modifier.background(Color.White)) {
 
                     Row(
                         modifier = Modifier.fillMaxWidth(),
@@ -79,7 +80,6 @@ fun BookDetails(
                     ){
 
                         Button(
-
                             onClick = {
                                 navController.navigate(Screen.Books.route)
                                 speechViewModel.stopTextToSpeech()
@@ -148,6 +148,7 @@ fun BookDetails(
                 Column(
                     modifier = Modifier
                         .padding(10.dp)
+                        .background(Color.White)
                         .fillMaxWidth(),
                 ) {
 
@@ -171,7 +172,6 @@ fun BookDetails(
                         fontSize = 20.sp
                     )
                 }
-
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()

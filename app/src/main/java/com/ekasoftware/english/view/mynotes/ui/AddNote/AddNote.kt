@@ -64,7 +64,9 @@ fun AddNoteItems(navController: NavHostController) {
     )
 
 
-    Column(modifier = Modifier.fillMaxSize()){
+    Column(modifier = Modifier
+        .background(Color.White)
+        .fillMaxSize()){
 
         Row(modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween){
@@ -113,7 +115,7 @@ fun AddNoteItems(navController: NavHostController) {
             .fillMaxWidth()
             .padding(10.dp)
         ){
-            Column {
+            Column(modifier = Modifier.background(Color.White)) {
 
                 TextField(
                     value = title,

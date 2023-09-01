@@ -43,13 +43,16 @@ import com.ekasoftware.english.R
 import com.ekasoftware.english.assets.Screen
 import com.ekasoftware.english.statusBarColor
 import com.ekasoftware.english.ui.theme.GrayLight
+import com.ekasoftware.english.ui.theme.MyGray
 import com.ekasoftware.english.view.translator.viewmodel.TranslatorViewModel
 
 
 @Composable
 fun Translate(navController: NavHostController, viewModel: TranslatorViewModel) {
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = Modifier
+        .background(Color.White)
+        .fillMaxSize()) {
         TranslateComment(navController = navController, viewModel = viewModel)
         TranslateLanguage(viewModel)
         TranslateResult(viewModel = viewModel)
@@ -84,7 +87,7 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
 
         Text(modifier = Modifier
             .padding(5.dp),
-            text = "OLA  ~  English Translator"
+            text = "OLA Translator"
         )
     }
 
@@ -110,7 +113,8 @@ private fun TranslateComment(navController: NavHostController,viewModel: Transla
                     unfocusedBorderColor = Color.Transparent
                 ),
                 maxLines = 20,
-                placeholder = { Text(text = "Metin Girin")},
+                placeholder = { Text(text = "Metin Girin",
+                    color = Color.Black)},
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(5.dp)
@@ -167,10 +171,13 @@ fun TranslateResult(viewModel: TranslatorViewModel) {
                 onValueChange = { viewModel.onTextToBeTranslatedChange(it) },
                 colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = Color.Transparent,
-                    unfocusedBorderColor = Color.Transparent
+                    unfocusedBorderColor = Color.Transparent,
+                    textColor = Color.Black
                 ),
+                readOnly = true,
                 maxLines = 20,
-                placeholder = { Text(text = "Çeviri Sonucu")},
+                placeholder = { Text(text = "Çeviri Sonucu",
+                    color = Color.Black)},
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(5.dp)
@@ -214,7 +221,8 @@ fun TranslateLanguage(viewModel: TranslatorViewModel) {
                             .padding(horizontal = 25.dp, vertical = 0.dp),
                         colors = TextFieldDefaults.outlinedTextFieldColors(
                             focusedBorderColor = Color.Transparent,
-                            unfocusedBorderColor = Color.Transparent
+                            unfocusedBorderColor = Color.Transparent,
+                            textColor = Color.Black
                         )
                     )
                     ExposedDropdownMenu(
@@ -224,7 +232,8 @@ fun TranslateLanguage(viewModel: TranslatorViewModel) {
                     {
                         languageOptions.forEach { language ->
                             DropdownMenuItem(
-                                text = { Text(text = language)},
+                                text = { Text(text = language,
+                                    color = Color.Black)},
                                 onClick = {
                                     selectedLanguage = language
                                     expanded = false
@@ -255,7 +264,8 @@ fun TranslateLanguage(viewModel: TranslatorViewModel) {
                     modifier = Modifier
                         .width(170.dp)
                         .padding(horizontal = 25.dp, vertical = 0.dp),
-                    placeholder = { Text(text = "Dil Seçin") },
+                    placeholder = { Text(text = "Dil Seçin",
+                         color = Color.Black) },
                     colors = TextFieldDefaults.outlinedTextFieldColors(
                         focusedBorderColor = Color.Transparent,
                         unfocusedBorderColor = Color.Transparent
@@ -264,7 +274,8 @@ fun TranslateLanguage(viewModel: TranslatorViewModel) {
                 ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
                     languageOptions.forEach { language ->
                         DropdownMenuItem(
-                            text = { Text(text = language)},
+                            text = { Text(text = language,
+                                color = Color.Black)},
                             onClick = {
                                 selectedSecondLanguage = language
                                 expanded = false

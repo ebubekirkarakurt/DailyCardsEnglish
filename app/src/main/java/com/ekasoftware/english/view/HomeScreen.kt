@@ -58,7 +58,7 @@ fun HomeScreen(navController: NavHostController) {
     Surface(modifier = Modifier
         .fillMaxSize()
     ) {
-       Column {
+       Column(modifier = Modifier.background(Color.White)) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()

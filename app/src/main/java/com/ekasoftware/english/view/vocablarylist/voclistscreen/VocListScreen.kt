@@ -51,7 +51,9 @@ fun VocListScreen(navController: NavHostController) {
         "Günlük Aktivite", "Alış-Veriş", "Sağlık", "Rutinler", "Tatil ve GEzi"
     )
 
-    Column(modifier = Modifier.fillMaxSize(1f)) {
+    Column(modifier = Modifier
+        .background(Color.White)
+        .fillMaxSize(1f)) {
 
         Button(
             modifier = Modifier

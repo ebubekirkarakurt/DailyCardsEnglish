@@ -1,0 +1,3300 @@
+[
+    {
+        "id": 1,
+        "ENG": "Turkey",
+        "TR": "Türkiye",
+        "categoryId": 1
+    },
+    {
+        "id": 2,
+        "ENG": "Germany",
+        "TR": "Almanya",
+        "categoryId": 1
+    },
+    {
+        "id": 3,
+        "ENG": "France",
+        "TR": "Fransa",
+        "categoryId": 1
+    },
+    {
+        "id": 4,
+        "ENG": "Italy",
+        "TR": "İtalya",
+        "categoryId": 1
+    },
+    {
+        "id": 5,
+        "ENG": "Spain",
+        "TR": "İspanya",
+        "categoryId": 1
+    },
+    {
+        "id": 6,
+        "ENG": "Portugal",
+        "TR": "Portekiz",
+        "categoryId": 1
+    },
+    {
+        "id": 7,
+        "ENG": "Greece",
+        "TR": "Yunanistan",
+        "categoryId": 1
+    },
+    {
+        "id": 8,
+        "ENG": "United Kingdom",
+        "TR": "Birleşik Krallık",
+        "categoryId": 1
+    },
+    {
+        "id": 9,
+        "ENG": "United States",
+        "TR": "Amerika Birleşik Devletleri",
+        "categoryId": 1
+    },
+    {
+        "id": 10,
+        "ENG": "Canada",
+        "TR": "Kanada",
+        "categoryId": 1
+    },
+    {
+        "id": 11,
+        "ENG": "Brazil",
+        "TR": "Brezilya",
+        "categoryId": 1
+    },
+    {
+        "id": 12,
+        "ENG": "China",
+        "TR": "Çin",
+        "categoryId": 1
+    },
+    {
+        "id": 13,
+        "ENG": "Japan",
+        "TR": "Japonya",
+        "categoryId": 1
+    },
+    {
+        "id": 14,
+        "ENG": "India",
+        "TR": "Hindistan",
+        "categoryId": 1
+    },
+    {
+        "id": 15,
+        "ENG": "Australia",
+        "TR": "Avustralya",
+        "categoryId": 1
+    },
+    {
+        "id": 16,
+        "ENG": "Russia",
+        "TR": "Rusya",
+        "categoryId": 1
+    },
+    {
+        "id": 17,
+        "ENG": "Mexico",
+        "TR": "Meksika",
+        "categoryId": 1
+    },
+    {
+        "id": 18,
+        "ENG": "Egypt",
+        "TR": "Mısır",
+        "categoryId": 1
+    },
+    {
+        "id": 19,
+        "ENG": "South Korea",
+        "TR": "Güney Kore",
+        "categoryId": 1
+    },
+    {
+        "id": 20,
+        "ENG": "Germany",
+        "TR": "Almanya",
+        "categoryId": 1
+    },
+    {
+        "id": 21,
+        "ENG": "Argentina",
+        "TR": "Arjantin",
+        "categoryId": 1
+    },
+    {
+        "id": 22,
+        "ENG": "Thailand",
+        "TR": "Tayland",
+        "categoryId": 1
+    },
+    {
+        "id": 23,
+        "ENG": "Saudi Arabia",
+        "TR": "Suudi Arabistan",
+        "categoryId": 1
+    },
+    {
+        "id": 24,
+        "ENG": "South Africa",
+        "TR": "Güney Afrika",
+        "categoryId": 1
+    },
+    {
+        "id": 25,
+        "ENG": "Malaysia",
+        "TR": "Malezya",
+        "categoryId": 1
+    },
+    {
+        "id": 26,
+        "ENG": "Indonesia",
+        "TR": "Endonezya",
+        "categoryId": 1
+    },
+    {
+        "id": 27,
+        "ENG": "Switzerland",
+        "TR": "İsviçre",
+        "categoryId": 1
+    },
+    {
+        "id": 28,
+        "ENG": "Sweden",
+        "TR": "İsveç",
+        "categoryId": 1
+    },
+    {
+        "id": 29,
+        "ENG": "New Zealand",
+        "TR": "Yeni Zelanda",
+        "categoryId": 1
+    },
+    {
+        "id": 30,
+        "ENG": "Netherlands",
+        "TR": "Hollanda",
+        "categoryId": 1
+    },
+{
+        "id": 31,
+        "ENG": "Food",
+        "TR": "Yiyecek",
+        "categoryId": 2
+    },
+    {
+        "id": 32,
+        "ENG": "Bread",
+        "TR": "Ekmek",
+        "categoryId": 2
+    },
+    {
+        "id": 33,
+        "ENG": "Rice",
+        "TR": "Pirinç",
+        "categoryId": 2
+    },
+    {
+        "id": 34,
+        "ENG": "Pasta",
+        "TR": "Makarna",
+        "categoryId": 2
+    },
+    {
+        "id": 35,
+        "ENG": "Meat",
+        "TR": "Et",
+        "categoryId": 2
+    },
+    {
+        "id": 36,
+        "ENG": "Chicken",
+        "TR": "Tavuk",
+        "categoryId": 2
+    },
+    {
+        "id": 37,
+        "ENG": "Fish",
+        "TR": "Balık",
+        "categoryId": 2
+    },
+    {
+        "id": 38,
+        "ENG": "Egg",
+        "TR": "Yumurta",
+        "categoryId": 2
+    },
+    {
+        "id": 39,
+        "ENG": "Cheese",
+        "TR": "Peynir",
+        "categoryId": 2
+    },
+    {
+        "id": 40,
+        "ENG": "Butter",
+        "TR": "Tereyağı",
+        "categoryId": 2
+    },
+    {
+        "id": 41,
+        "ENG": "Milk",
+        "TR": "Süt",
+        "categoryId": 2
+    },
+    {
+        "id": 42,
+        "ENG": "Yogurt",
+        "TR": "Yoğurt",
+        "categoryId": 2
+    },
+    {
+        "id": 43,
+        "ENG": "Fruit",
+        "TR": "Meyve",
+        "categoryId": 2
+    },
+    {
+        "id": 44,
+        "ENG": "Apple",
+        "TR": "Elma",
+        "categoryId": 2
+    },
+    {
+        "id": 45,
+        "ENG": "Banana",
+        "TR": "Muz",
+        "categoryId": 2
+    },
+    {
+        "id": 46,
+        "ENG": "Orange",
+        "TR": "Portakal",
+        "categoryId": 2
+    },
+    {
+        "id": 47,
+        "ENG": "Grapes",
+        "TR": "Üzüm",
+        "categoryId": 2
+    },
+    {
+        "id": 48,
+        "ENG": "Strawberry",
+        "TR": "Çilek",
+        "categoryId": 2
+    },
+    {
+        "id": 49,
+        "ENG": "Vegetable",
+        "TR": "Sebze",
+        "categoryId": 2
+    },
+    {
+        "id": 50,
+        "ENG": "Tomato",
+        "TR": "Domates",
+        "categoryId": 2
+    },
+    {
+        "id": 51,
+        "ENG": "Cucumber",
+        "TR": "Salatalık",
+        "categoryId": 2
+    },
+    {
+        "id": 52,
+        "ENG": "Potato",
+        "TR": "Patates",
+        "categoryId": 2
+    },
+    {
+        "id": 53,
+        "ENG": "Carrot",
+        "TR": "Havuç",
+        "categoryId": 2
+    },
+    {
+        "id": 54,
+        "ENG": "Onion",
+        "TR": "Soğan",
+        "categoryId": 2
+    },
+    {
+        "id": 55,
+        "ENG": "Lettuce",
+        "TR": "Marul",
+        "categoryId": 2
+    },
+    {
+        "id": 56,
+        "ENG": "Drink",
+        "TR": "İçecek",
+        "categoryId": 2
+    },
+    {
+        "id": 57,
+        "ENG": "Water",
+        "TR": "Su",
+        "categoryId": 2
+    },
+    {
+        "id": 58,
+        "ENG": "Tea",
+        "TR": "Çay",
+        "categoryId": 2
+    },
+    {
+        "id": 59,
+        "ENG": "Coffee",
+        "TR": "Kahve",
+        "categoryId": 2
+    },
+    {
+        "id": 60,
+        "ENG": "Juice",
+        "TR": "Meyve suyu",
+        "categoryId": 2
+    },
+    {
+        "id": 61,
+        "ENG": "Soda",
+        "TR": "Soda",
+        "categoryId": 2
+    },
+    {
+        "id": 62,
+        "ENG": "Lemonade",
+        "TR": "Limonata",
+        "categoryId": 2
+    },
+    {
+        "id": 63,
+        "ENG": "Ice cream",
+        "TR": "Dondurma",
+        "categoryId": 2
+    },
+    {
+        "id": 64,
+        "ENG": "Cake",
+        "TR": "Kek",
+        "categoryId": 2
+    },
+    {
+        "id": 65,
+        "ENG": "Biscuit",
+        "TR": "Bisküvi",
+        "categoryId": 2
+    },
+    {
+        "id": 66,
+        "ENG": "Chocolate",
+        "TR": "Çikolata",
+        "categoryId": 2
+    },
+    {
+        "id": 67,
+        "ENG": "Jam",
+        "TR": "Reçel",
+        "categoryId": 2
+    },
+    {
+        "id": 68,
+        "ENG": "Honey",
+        "TR": "Bal",
+        "categoryId": 2
+    },
+    {
+        "id": 69,
+        "ENG": "Salad",
+        "TR": "Salata",
+        "categoryId": 2
+    },
+    {
+        "id": 70,
+        "ENG": "Soup",
+        "TR": "Çorba",
+        "categoryId": 2
+    },
+    {
+        "id": 71,
+        "ENG": "Pizza",
+        "TR": "Pizza",
+        "categoryId": 2
+    },
+    {
+        "id": 72,
+        "ENG": "Hamburger",
+        "TR": "Hamburger",
+        "categoryId": 2
+    },
+    {
+        "id": 73,
+        "ENG": "Sandwich",
+        "TR": "Sandviç",
+        "categoryId": 2
+    },
+    {
+        "id": 74,
+        "ENG": "Sausage",
+        "TR": "Sosis",
+        "categoryId": 2
+    },
+    {
+        "id": 75,
+        "ENG": "Ketchup",
+        "TR": "Ketçap",
+        "categoryId": 2
+    },
+    {
+        "id": 76,
+        "ENG": "Mustard",
+        "TR": "Hardal",
+        "categoryId": 2
+    },
+    {
+        "id": 77,
+        "ENG": "Salt",
+        "TR": "Tuz",
+        "categoryId": 2
+    },
+    {
+        "id": 78,
+        "ENG": "Pepper",
+        "TR": "Karabiber",
+        "categoryId": 2
+    },
+    {
+        "id": 79,
+        "ENG": "Sugar",
+        "TR": "Şeker",
+        "categoryId": 2
+    },
+    {
+        "id": 80,
+        "ENG": "Oil",
+        "TR": "Yağ",
+        "categoryId": 2
+    },
+    {
+        "id": 81,
+        "ENG": "Go straight",
+        "TR": "Dümdüz git",
+        "categoryId": 3
+    },
+    {
+        "id": 82,
+        "ENG": "Turn left",
+        "TR": "Sola dön",
+        "categoryId": 3
+    },
+    {
+        "id": 83,
+        "ENG": "Turn right",
+        "TR": "Sağa dön",
+        "categoryId": 3
+    },
+    {
+        "id": 84,
+        "ENG": "Cross the street",
+        "TR": "Sokaktan karşıya geç",
+        "categoryId": 3
+    },
+    {
+        "id": 85,
+        "ENG": "Walk forward",
+        "TR": "İleri yürü",
+        "categoryId": 3
+    },
+    {
+        "id": 86,
+        "ENG": "Stop",
+        "TR": "Dur",
+        "categoryId": 3
+    },
+    {
+        "id": 87,
+        "ENG": "Continue",
+        "TR": "Devam et",
+        "categoryId": 3
+    },
+    {
+        "id": 88,
+        "ENG": "Follow the road",
+        "TR": "Yolu takip et",
+        "categoryId": 3
+    },
+    {
+        "id": 89,
+        "ENG": "Take the first/second/third street",
+        "TR": "İlk/ikinci/üçüncü sokağı al",
+        "categoryId": 3
+    },
+    {
+        "id": 90,
+        "ENG": "Go past the park",
+        "TR": "Parkın yanından geç",
+        "categoryId": 3
+    },
+    {
+        "id": 91,
+        "ENG": "It's on your left/right",
+        "TR": "Solda/sağda",
+        "categoryId": 3
+    },
+    {
+        "id": 92,
+        "ENG": "Go towards the big building",
+        "TR": "Büyük binaya doğru git",
+        "categoryId": 3
+    },
+    {
+        "id": 93,
+        "ENG": "Take the bridge",
+        "TR": "Köprüyü kullan",
+        "categoryId": 3
+    },
+    {
+        "id": 94,
+        "ENG": "Walk along the river",
+        "TR": "Nehir boyunca yürü",
+        "categoryId": 3
+    },
+    {
+        "id": 95,
+        "ENG": "Cross the bridge",
+        "TR": "Köprüyü geç",
+        "categoryId": 3
+    },
+    {
+        "id": 96,
+        "ENG": "Go through the tunnel",
+        "TR": "Tünelin içinden git",
+        "categoryId": 3
+    },
+    {
+        "id": 97,
+        "ENG": "Go up/down the stairs",
+        "TR": "Merdivenleri yukarı/aşağı çık",
+        "categoryId": 3
+    },
+    {
+        "id": 98,
+        "ENG": "Turn around",
+        "TR": "Dön",
+        "categoryId": 3
+    },
+    {
+        "id": 99,
+        "ENG": "Go back",
+        "TR": "Geri dön",
+        "categoryId": 3
+    },
+    {
+        "id": 100,
+        "ENG": "It's just ahead",
+        "TR": "Sadece ileride",
+        "categoryId": 3
+    },
+    {
+        "id": 101,
+        "ENG": "You've arrived",
+        "TR": "Vardın",
+        "categoryId": 3
+    },
+    {
+        "id": 102,
+        "ENG": "It's on your right/left-hand side",
+        "TR": "Sağ/sol tarafında",
+        "categoryId": 3
+    },
+    {
+        "id": 103,
+        "ENG": "Walk for about 200 meters",
+        "TR": "Yaklaşık 200 metre yürü",
+        "categoryId": 3
+    },
+    {
+        "id": 104,
+        "ENG": "It's on the corner",
+        "TR": "Köşede",
+        "categoryId": 3
+    },
+    {
+        "id": 105,
+        "ENG": "Use the pedestrian crossing",
+        "TR": "Yaya geçidine geç",
+        "categoryId": 3
+    },
+    {
+        "id": 106,
+        "ENG": "Look for the sign",
+        "TR": "İşareti ara",
+        "categoryId": 3
+    },
+    {
+        "id": 107,
+        "ENG": "Don't go too far",
+        "TR": "Çok uzağa gitme",
+        "categoryId": 3
+    },
+    {
+        "id": 108,
+        "ENG": "You're almost there",
+        "TR": "Neredeyse oradasın",
+        "categoryId": 3
+    },
+    {
+        "id": 109,
+        "ENG": "Take a taxi/bus/train to get there",
+        "TR": "Oraya gitmek için taksi/otobüs/tren kullan",
+        "categoryId": 3
+    },
+    {
+        "id": 110,
+        "ENG": "It's on the opposite side",
+        "TR": "Karşı tarafta",
+        "categoryId": 3
+    },
+    {
+        "id": 111,
+        "ENG": "Temperature",
+        "TR": "Sıcaklık",
+        "categoryId": 4
+    },
+    {
+        "id": 112,
+        "ENG": "Sunny",
+        "TR": "Güneşli",
+        "categoryId": 4
+    },
+    {
+        "id": 113,
+        "ENG": "Cloudy",
+        "TR": "Bulutlu",
+        "categoryId": 4
+    },
+    {
+        "id": 114,
+        "ENG": "Rainy",
+        "TR": "Yağmurlu",
+        "categoryId": 4
+    },
+    {
+        "id": 115,
+        "ENG": "Windy",
+        "TR": "Rüzgarlı",
+        "categoryId": 4
+    },
+    {
+        "id": 116,
+        "ENG": "Snowy",
+        "TR": "Karlı",
+        "categoryId": 4
+    },
+    {
+        "id": 117,
+        "ENG": "Stormy",
+        "TR": "Fırtınalı",
+        "categoryId": 4
+    },
+    {
+        "id": 118,
+        "ENG": "Hot",
+        "TR": "Sıcak",
+        "categoryId": 4
+    },
+    {
+        "id": 119,
+        "ENG": "Cold",
+        "TR": "Soğuk",
+        "categoryId": 4
+    },
+    {
+        "id": 120,
+        "ENG": "Warm",
+        "TR": "Ilık",
+        "categoryId": 4
+    },
+    {
+        "id": 121,
+        "ENG": "Cool",
+        "TR": "Serin",
+        "categoryId": 4
+    },
+    {
+        "id": 122,
+        "ENG": "Humid",
+        "TR": "Nemli",
+        "categoryId": 4
+    },
+    {
+        "id": 123,
+        "ENG": "Dry",
+        "TR": "Kuru",
+        "categoryId": 4
+    },
+    {
+        "id": 124,
+        "ENG": "Wet",
+        "TR": "Islak",
+        "categoryId": 4
+    },
+    {
+        "id": 125,
+        "ENG": "Foggy",
+        "TR": "Sisli",
+        "categoryId": 4
+    },
+    {
+        "id": 126,
+        "ENG": "Overcast",
+        "TR": "Kapalı",
+        "categoryId": 4
+    },
+    {
+        "id": 127,
+        "ENG": "Thunderstorm",
+        "TR": "Gök gürültülü fırtına",
+        "categoryId": 4
+    },
+    {
+        "id": 128,
+        "ENG": "Hurricane",
+        "TR": "Kasırga",
+        "categoryId": 4
+    },
+    {
+        "id": 129,
+        "ENG": "Tornado",
+        "TR": "Tornado",
+        "categoryId": 4
+    },
+    {
+        "id": 130,
+        "ENG": "Season",
+        "TR": "Mevsim",
+        "categoryId": 4
+    },
+    {
+        "id": 131,
+        "ENG": "Spring",
+        "TR": "Bahar",
+        "categoryId": 4
+    },
+    {
+        "id": 132,
+        "ENG": "Summer",
+        "TR": "Yaz",
+        "categoryId": 4
+    },
+    {
+        "id": 133,
+        "ENG": "Autumn/Fall",
+        "TR": "Sonbahar",
+        "categoryId": 4
+    },
+    {
+        "id": 134,
+        "ENG": "Winter",
+        "TR": "Kış",
+        "categoryId": 4
+    },
+    {
+        "id": 135,
+        "ENG": "Rain",
+        "TR": "Yağmur",
+        "categoryId": 4
+    },
+    {
+        "id": 136,
+        "ENG": "Snow",
+        "TR": "Kar",
+        "categoryId": 4
+    },
+    {
+        "id": 137,
+        "ENG": "Cloud",
+        "TR": "Bulut",
+        "categoryId": 4
+    },
+    {
+        "id": 138,
+        "ENG": "Sun",
+        "TR": "Güneş",
+        "categoryId": 4
+    },
+    {
+        "id": 139,
+        "ENG": "Umbrella",
+        "TR": "Şemsiye",
+        "categoryId": 4
+    },
+     {
+        "id": 140,
+        "ENG": "Wake up",
+        "TR": "Uyanmak",
+        "categoryId": 5
+    },
+    {
+        "id": 141,
+        "ENG": "Brush teeth",
+        "TR": "Dişleri fırçalamak",
+        "categoryId": 5
+    },
+    {
+        "id": 142,
+        "ENG": "Take a shower",
+        "TR": "Duş almak",
+        "categoryId": 5
+    },
+    {
+        "id": 143,
+        "ENG": "Get dressed",
+        "TR": "Giyinmek",
+        "categoryId": 5
+    },
+    {
+        "id": 144,
+        "ENG": "Have breakfast",
+        "TR": "Kahvaltı yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 145,
+        "ENG": "Go to work",
+        "TR": "İşe gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 146,
+        "ENG": "Work",
+        "TR": "Çalışmak",
+        "categoryId": 5
+    },
+    {
+        "id": 147,
+        "ENG": "Have lunch",
+        "TR": "Öğle yemeği yemek",
+        "categoryId": 5
+    },
+    {
+        "id": 148,
+        "ENG": "Go home",
+        "TR": "Eve gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 149,
+        "ENG": "Cook",
+        "TR": "Yemek pişirmek",
+        "categoryId": 5
+    },
+    {
+        "id": 150,
+        "ENG": "Eat dinner",
+        "TR": "Akşam yemeği yemek",
+        "categoryId": 5
+    },
+    {
+        "id": 151,
+        "ENG": "Watch TV",
+        "TR": "Televizyon izlemek",
+        "categoryId": 5
+    },
+    {
+        "id": 152,
+        "ENG": "Read a book",
+        "TR": "Kitap okumak",
+        "categoryId": 5
+    },
+    {
+        "id": 153,
+        "ENG": "Exercise",
+        "TR": "Egzersiz yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 154,
+        "ENG": "Go for a walk",
+        "TR": "Yürüyüşe çıkmak",
+        "categoryId": 5
+    },
+    {
+        "id": 155,
+        "ENG": "Meet friends",
+        "TR": "Arkadaşlarla buluşmak",
+        "categoryId": 5
+    },
+    {
+        "id": 156,
+        "ENG": "Play sports",
+        "TR": "Spor yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 157,
+        "ENG": "Listen to music",
+        "TR": "Müzik dinlemek",
+        "categoryId": 5
+    },
+    {
+        "id": 158,
+        "ENG": "Go shopping",
+        "TR": "Alışveriş yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 159,
+        "ENG": "Clean the house",
+        "TR": "Evi temizlemek",
+        "categoryId": 5
+    },
+    {
+        "id": 160,
+        "ENG": "Do laundry",
+        "TR": "Çamaşır yıkamak",
+        "categoryId": 5
+    },
+    {
+        "id": 161,
+        "ENG": "Take care of pets",
+        "TR": "Evcil hayvanlara bakmak",
+        "categoryId": 5
+    },
+    {
+        "id": 162,
+        "ENG": "Water the plants",
+        "TR": "Bitkileri sulamak",
+        "categoryId": 5
+    },
+    {
+        "id": 163,
+        "ENG": "Go to the gym",
+        "TR": "Spor salonuna gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 164,
+        "ENG": "Study",
+        "TR": "Ders çalışmak",
+        "categoryId": 5
+    },
+    {
+        "id": 165,
+        "ENG": "Relax",
+        "TR": "Dinlenmek",
+        "categoryId": 5
+    },
+    {
+        "id": 166,
+        "ENG": "Go to bed",
+        "TR": "Yatağa gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 167,
+        "ENG": "Sleep",
+        "TR": "Uyumak",
+        "categoryId": 5
+    },
+    {
+        "id": 168,
+        "ENG": "Go to school",
+        "TR": "Okula gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 169,
+        "ENG": "Attend classes",
+        "TR": "Derslere katılmak",
+        "categoryId": 5
+    },
+    {
+        "id": 170,
+        "ENG": "Do homework",
+        "TR": "Ödev yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 171,
+        "ENG": "Take a break",
+        "TR": "Mola vermek",
+        "categoryId": 5
+    },
+    {
+        "id": 172,
+        "ENG": "Go for a bike ride",
+        "TR": "Bisiklet sürmeye çıkmak",
+        "categoryId": 5
+    },
+    {
+        "id": 173,
+        "ENG": "Call a friend",
+        "TR": "Bir arkadaşı aramak",
+        "categoryId": 5
+    },
+    {
+        "id": 174,
+        "ENG": "Write in a journal",
+        "TR": "Günlük yazmak",
+        "categoryId": 5
+    },
+    {
+        "id": 175,
+        "ENG": "Go to the park",
+        "TR": "Parka gitmek",
+        "categoryId": 5
+    },
+    {
+        "id": 176,
+        "ENG": "Take a nap",
+        "TR": "Kısa bir uyku çekmek",
+        "categoryId": 5
+    },
+    {
+        "id": 177,
+        "ENG": "Bake",
+        "TR": "Pişirmek (özellikle fırında)",
+        "categoryId": 5
+    },
+    {
+        "id": 178,
+        "ENG": "Dance",
+        "TR": "Dans etmek",
+        "categoryId": 5
+    },
+    {
+        "id": 179,
+        "ENG": "Sing",
+        "TR": "Şarkı söylemek",
+        "categoryId": 5
+    },
+    {
+        "id": 180,
+        "ENG": "Draw",
+        "TR": "Çizmek",
+        "categoryId": 5
+    },
+    {
+        "id": 181,
+        "ENG": "Paint",
+        "TR": "Boya",
+        "categoryId": 5
+    },
+    {
+        "id": 182,
+        "ENG": "Play an instrument",
+        "TR": "Müzik aleti çalmak",
+        "categoryId": 5
+    },
+    {
+        "id": 183,
+        "ENG": "Volunteer",
+        "TR": "Gönüllü olmak",
+        "categoryId": 5
+    },
+    {
+        "id": 184,
+        "ENG": "Plan",
+        "TR": "Plan yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 185,
+        "ENG": "Send emails",
+        "TR": "E-posta göndermek",
+        "categoryId": 5
+    },
+    {
+        "id": 186,
+        "ENG": "Do yoga",
+        "TR": "Yoga yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 187,
+        "ENG": "Play video games",
+        "TR": "Video oyunları oynamak",
+        "categoryId": 5
+    },
+    {
+        "id": 188,
+        "ENG": "Meditate",
+        "TR": "Meditasyon yapmak",
+        "categoryId": 5
+    },
+    {
+        "id": 189,
+        "ENG": "Travel",
+        "TR": "Seyahat etmek",
+        "categoryId": 5
+    },
+    {
+        "id": 190,
+        "ENG": "Shop",
+        "TR": "Mağaza",
+        "categoryId": 6
+    },
+    {
+        "id": 191,
+        "ENG": "Store",
+        "TR": "Dükkan",
+        "categoryId": 6
+    },
+    {
+        "id": 192,
+        "ENG": "Market",
+        "TR": "Market",
+        "categoryId": 6
+    },
+    {
+        "id": 193,
+        "ENG": "Supermarket",
+        "TR": "Süpermarket",
+        "categoryId": 6
+    },
+    {
+        "id": 194,
+        "ENG": "Grocery",
+        "TR": "Bakkal",
+        "categoryId": 6
+    },
+    {
+        "id": 195,
+        "ENG": "Shopping",
+        "TR": "Alışveriş",
+        "categoryId": 6
+    },
+    {
+        "id": 196,
+        "ENG": "Customer",
+        "TR": "Müşteri",
+        "categoryId": 6
+    },
+    {
+        "id": 197,
+        "ENG": "Cashier",
+        "TR": "Kasiyer",
+        "categoryId": 6
+    },
+    {
+        "id": 198,
+        "ENG": "Basket",
+        "TR": "Sepet",
+        "categoryId": 6
+    },
+    {
+        "id": 199,
+        "ENG": "Cart/Trolley",
+        "TR": "Alışveriş arabası",
+        "categoryId": 6
+    },
+    {
+        "id": 200,
+        "ENG": "Cash",
+        "TR": "Nakit",
+        "categoryId": 6
+    },
+    {
+        "id": 201,
+        "ENG": "Credit card",
+        "TR": "Kredi kartı",
+        "categoryId": 6
+    },
+    {
+        "id": 202,
+        "ENG": "Debit card",
+        "TR": "Banka kartı",
+        "categoryId": 6
+    },
+    {
+        "id": 203,
+        "ENG": "Receipt",
+        "TR": "Fiş/fatura",
+        "categoryId": 6
+    },
+    {
+        "id": 204,
+        "ENG": "Sale",
+        "TR": "İndirim",
+        "categoryId": 6
+    },
+    {
+        "id": 205,
+        "ENG": "Discount",
+        "TR": "İndirim",
+        "categoryId": 6
+    },
+    {
+        "id": 206,
+        "ENG": "Offer",
+        "TR": "Teklif",
+        "categoryId": 6
+    },
+    {
+        "id": 207,
+        "ENG": "Buy",
+        "TR": "Satın almak",
+        "categoryId": 6
+    },
+    {
+        "id": 208,
+        "ENG": "Sell",
+        "TR": "Satmak",
+        "categoryId": 6
+    },
+    {
+        "id": 209,
+        "ENG": "Price",
+        "TR": "Fiyat",
+        "categoryId": 6
+    },
+    {
+        "id": 210,
+        "ENG": "Currency",
+        "TR": "Para birimi",
+        "categoryId": 6
+    },
+    {
+        "id": 211,
+        "ENG": "Change",
+        "TR": "Para üstü",
+        "categoryId": 6
+    },
+    {
+        "id": 212,
+        "ENG": "Pay",
+        "TR": "Ödemek",
+        "categoryId": 6
+    },
+    {
+        "id": 213,
+        "ENG": "Cash register",
+        "TR": "Kasa",
+        "categoryId": 6
+    },
+    {
+        "id": 214,
+        "ENG": "Checkout counter",
+        "TR": "Kasa sırası",
+        "categoryId": 6
+    },
+    {
+        "id": 215,
+        "ENG": "Can I help you?",
+        "TR": "Size yardımcı olabilir miyim?",
+        "categoryId": 6
+    },
+    {
+        "id": 216,
+        "ENG": "How much is this?",
+        "TR": "Bu ne kadar?",
+        "categoryId": 6
+    },
+    {
+        "id": 217,
+        "ENG": "Do you have this in a different color/size?",
+        "TR": "Bunun farklı bir rengi/bedeni var mı?",
+        "categoryId": 6
+    },
+    {
+        "id": 218,
+        "ENG": "I'd like to return/exchange this.",
+        "TR": "Bunun iadesini/değişimini yapmak istiyorum.",
+        "categoryId": 6
+    },
+    {
+        "id": 219,
+        "ENG": "Do you accept credit cards?",
+        "TR": "Kredi kartı kabul ediyor musunuz?",
+        "categoryId": 6
+    },
+    {
+        "id": 220,
+        "ENG": "Health",
+        "TR": "Sağlık",
+        "categoryId": 7
+    },
+    {
+        "id": 221,
+        "ENG": "Illness",
+        "TR": "Hastalık",
+        "categoryId": 7
+    },
+    {
+        "id": 222,
+        "ENG": "Disease",
+        "TR": "Hastalık",
+        "categoryId": 7
+    },
+    {
+        "id": 223,
+        "ENG": "Symptom",
+        "TR": "Belirti",
+        "categoryId": 7
+    },
+    {
+        "id": 224,
+        "ENG": "Fever",
+        "TR": "Ateş",
+        "categoryId": 7
+    },
+    {
+        "id": 225,
+        "ENG": "Cough",
+        "TR": "Öksürük",
+        "categoryId": 7
+    },
+    {
+        "id": 226,
+        "ENG": "Cold",
+        "TR": "Soğuk algınlığı",
+        "categoryId": 7
+    },
+    {
+        "id": 227,
+        "ENG": "Flu",
+        "TR": "Grip",
+        "categoryId": 7
+    },
+    {
+        "id": 228,
+        "ENG": "Headache",
+        "TR": "Baş ağrısı",
+        "categoryId": 7
+    },
+    {
+        "id": 229,
+        "ENG": "Stomachache",
+        "TR": "Karın ağrısı",
+        "categoryId": 7
+    },
+    {
+        "id": 230,
+        "ENG": "Sore throat",
+        "TR": "Boğaz ağrısı",
+        "categoryId": 7
+    },
+    {
+        "id": 231,
+        "ENG": "Nausea",
+        "TR": "Mide bulantısı",
+        "categoryId": 7
+    },
+    {
+        "id": 232,
+        "ENG": "Vomiting",
+        "TR": "Kusma",
+        "categoryId": 7
+    },
+    {
+        "id": 233,
+        "ENG": "Diarrhea",
+        "TR": "İshal",
+        "categoryId": 7
+    },
+    {
+        "id": 234,
+        "ENG": "Allergy",
+        "TR": "Alerji",
+        "categoryId": 7
+    },
+    {
+        "id": 235,
+        "ENG": "Rash",
+        "TR": "Döküntü",
+        "categoryId": 7
+    },
+    {
+        "id": 236,
+        "ENG": "Fatigue",
+        "TR": "Yorgunluk",
+        "categoryId": 7
+    },
+    {
+        "id": 237,
+        "ENG": "Dizziness",
+        "TR": "Baş dönmesi",
+        "categoryId": 7
+    },
+    {
+        "id": 238,
+        "ENG": "Injury",
+        "TR": "Yaralanma",
+        "categoryId": 7
+    },
+    {
+        "id": 239,
+        "ENG": "Wound",
+        "TR": "Yara",
+        "categoryId": 7
+    },
+    {
+        "id": 240,
+        "ENG": "Bandage",
+        "TR": "Bandaj",
+        "categoryId": 7
+    },
+    {
+        "id": 241,
+        "ENG": "Prescription",
+        "TR": "Reçete",
+        "categoryId": 7
+    },
+    {
+        "id": 242,
+        "ENG": "Medicine",
+        "TR": "İlaç",
+        "categoryId": 7
+    },
+    {
+        "id": 243,
+        "ENG": "Antibiotics",
+        "TR": "Antibiyotikler",
+        "categoryId": 7
+    },
+    {
+        "id": 244,
+        "ENG": "Painkiller",
+        "TR": "Ağrı kesici",
+        "categoryId": 7
+    },
+    {
+        "id": 245,
+        "ENG": "Take your temperature",
+        "TR": "Ateşini ölç",
+        "categoryId": 7
+    },
+    {
+        "id": 246,
+        "ENG": "Get plenty of rest",
+        "TR": "Bol bol dinlen",
+        "categoryId": 7
+    },
+    {
+        "id": 247,
+        "ENG": "Drink lots of fluids",
+        "TR": "Bol sıvı tüket",
+        "categoryId": 7
+    },
+    {
+        "id": 248,
+        "ENG": "Wash your hands frequently",
+        "TR": "Ellerini sık sık yıka",
+        "categoryId": 7
+    },
+    {
+        "id": 249,
+        "ENG": "Apply ice to reduce swelling",
+        "TR": "Şişliği azaltmak için buz uygula",
+        "categoryId": 7
+    },
+    {
+        "id": 250,
+        "ENG": "I'm not feeling well.",
+        "TR": "Kendimi iyi hissetmiyorum.",
+        "categoryId": 7
+    },
+    {
+        "id": 251,
+        "ENG": "I have a headache.",
+        "TR": "Başım ağrıyor.",
+        "categoryId": 7
+    },
+    {
+        "id": 252,
+        "ENG": "My throat hurts.",
+        "TR": "Boğazım acıyor.",
+        "categoryId": 7
+    },
+    {
+        "id": 253,
+        "ENG": "I have a fever.",
+        "TR": "Ateşim var.",
+        "categoryId": 7
+    },
+    {
+        "id": 254,
+        "ENG": "I think I have a cold.",
+        "TR": "Sanırım nezleyim.",
+        "categoryId": 7
+    },
+    {
+        "id": 255,
+        "ENG": "I need to see a doctor.",
+        "TR": "Bir doktora gitmem lazım.",
+        "categoryId": 7
+    },
+    {
+        "id": 256,
+        "ENG": "Are you allergic to anything?",
+        "TR": "Herhangi bir şeye alerjiniz var mı?",
+        "categoryId": 7
+    },
+    {
+        "id": 257,
+        "ENG": "Take this medicine three times a day.",
+        "TR": "Bu ilacı günde üç kez alın.",
+        "categoryId": 7
+    },
+    {
+        "id": 258,
+        "ENG": "How long have you been feeling like this?",
+        "TR": "Böyle hissetmeye ne zamandır devam ediyorsunuz?",
+        "categoryId": 7
+    },
+    {
+        "id": 259,
+        "ENG": "I hope you get well soon.",
+        "TR": "Umarım yakında iyileşirsiniz.",
+        "categoryId": 7
+    },
+    {
+        "id": 260,
+        "ENG": "I have a cough that won't go away.",
+        "TR": "Geçmeyen bir öksürüğüm var.",
+        "categoryId": 7
+    },
+    {
+        "id": 261,
+        "ENG": "My nose is blocked.",
+        "TR": "Burnum tıkalı.",
+        "categoryId": 7
+    },
+    {
+        "id": 262,
+        "ENG": "I feel dizzy.",
+        "TR": "Başım dönüyor.",
+        "categoryId": 7
+    },
+    {
+        "id": 263,
+        "ENG": "My stomach is upset.",
+        "TR": "Midem rahatsız.",
+        "categoryId": 7
+    },
+    {
+        "id": 264,
+        "ENG": "I have a sore throat and a fever.",
+        "TR": "Boğazım ağrıyor ve ateşim var.",
+        "categoryId": 7
+    },
+    {
+        "id": 265,
+        "ENG": "Can you recommend any over-the-counter medicine?",
+        "TR": "Reçetesiz alınabilecek bir ilaç tavsiye edebilir misiniz?",
+        "categoryId": 7
+    },
+    {
+        "id": 266,
+        "ENG": "How long will it take to recover?",
+        "TR": "İyileşmek ne kadar sürecek?",
+        "categoryId": 7
+    },
+    {
+        "id": 267,
+        "ENG": "I need to schedule an appointment with the doctor.",
+        "TR": "Doktorla bir randevu ayarlamam gerekiyor.",
+        "categoryId": 7
+    },
+    {
+        "id": 268,
+        "ENG": "My back hurts.",
+        "TR": "Sırtım ağrıyor.",
+        "categoryId": 7
+    },
+    {
+        "id": 269,
+        "ENG": "I'm feeling weak and tired.",
+        "TR": "Zayıf ve yorgun hissediyorum.",
+        "categoryId": 7
+    },
+    {
+        "id": 270,
+        "ENG": "Routine",
+        "TR": "Rutin",
+        "categoryId": 8
+    },
+    {
+        "id": 271,
+        "ENG": "Habit",
+        "TR": "Alışkanlık",
+        "categoryId": 8
+    },
+    {
+        "id": 272,
+        "ENG": "Daily",
+        "TR": "Günlük",
+        "categoryId": 8
+    },
+    {
+        "id": 273,
+        "ENG": "Weekly",
+        "TR": "Haftalık",
+        "categoryId": 8
+    },
+    {
+        "id": 274,
+        "ENG": "Monthly",
+        "TR": "Aylık",
+        "categoryId": 8
+    },
+    {
+        "id": 275,
+        "ENG": "Yearly",
+        "TR": "Yıllık",
+        "categoryId": 8
+    },
+    {
+        "id": 276,
+        "ENG": "Morning",
+        "TR": "Sabah",
+        "categoryId": 8
+    },
+    {
+        "id": 277,
+        "ENG": "Afternoon",
+        "TR": "Öğleden sonra",
+        "categoryId": 8
+    },
+    {
+        "id": 278,
+        "ENG": "Evening",
+        "TR": "Akşam",
+        "categoryId": 8
+    },
+    {
+        "id": 279,
+        "ENG": "Night",
+        "TR": "Gece",
+        "categoryId": 8
+    },
+    {
+        "id": 280,
+        "ENG": "Wake up",
+        "TR": "Uyanmak",
+        "categoryId": 8
+    },
+    {
+        "id": 281,
+        "ENG": "Get up",
+        "TR": "Kalkmak",
+        "categoryId": 8
+    },
+    {
+        "id": 282,
+        "ENG": "Brush teeth",
+        "TR": "Dişleri fırçalamak",
+        "categoryId": 8
+    },
+    {
+        "id": 283,
+        "ENG": "Have breakfast/lunch/dinner",
+        "TR": "Kahvaltı/öğle yemeği/akşam yemeği yapmak",
+        "categoryId": 8
+    },
+    {
+        "id": 284,
+        "ENG": "Go to work/school",
+        "TR": "İşe/okula gitmek",
+        "categoryId": 8
+    },
+    {
+        "id": 285,
+        "ENG": "Come home",
+        "TR": "Eve gelmek",
+        "categoryId": 8
+    },
+    {
+        "id": 286,
+        "ENG": "Exercise",
+        "TR": "Egzersiz yapmak",
+        "categoryId": 8
+    },
+    {
+        "id": 287,
+        "ENG": "Read",
+        "TR": "Okumak",
+        "categoryId": 8
+    },
+    {
+        "id": 288,
+        "ENG": "Watch TV",
+        "TR": "Televizyon izlemek",
+        "categoryId": 8
+    },
+    {
+        "id": 289,
+        "ENG": "Go to bed",
+        "TR": "Yatağa gitmek",
+        "categoryId": 8
+    },
+    {
+        "id": 290,
+        "ENG": "Take a shower",
+        "TR": "Duş almak",
+        "categoryId": 8
+    },
+    {
+        "id": 291,
+        "ENG": "Have a snack",
+        "TR": "Ara öğün yapmak",
+        "categoryId": 8
+    },
+    {
+        "id": 292,
+        "ENG": "Do yoga",
+        "TR": "Yoga yapmak",
+        "categoryId": 8
+    },
+    {
+        "id": 293,
+        "ENG": "Check emails",
+        "TR": "E-postaları kontrol etmek",
+        "categoryId": 8
+    },
+    {
+        "id": 294,
+        "ENG": "Go for a walk",
+        "TR": "Yürüyüşe çıkmak",
+        "categoryId": 8
+    },
+    {
+        "id": 295,
+        "ENG": "Go out with friends",
+        "TR": "Arkadaşlarla dışarı çıkmak",
+        "categoryId": 8
+    },
+    {
+        "id": 296,
+        "ENG": "Listen to music",
+        "TR": "Müzik dinlemek",
+        "categoryId": 8
+    },
+    {
+        "id": 297,
+        "ENG": "Have a cup of tea/coffee",
+        "TR": "Bir fincan çay/kahve içmek",
+        "categoryId": 8
+    },
+    {
+        "id": 298,
+        "ENG": "Clean the house",
+        "TR": "Evi temizlemek",
+        "categoryId": 8
+    },
+    {
+        "id": 299,
+        "ENG": "Go shopping",
+        "TR": "Alışveriş yapmak",
+        "categoryId": 8
+    },
+    {
+        "id": 300,
+        "ENG": "He goes to work by bus.",
+        "TR": "O, işe otobüsle gider.",
+        "categoryId": 8
+    },
+    {
+        "id": 301,
+        "ENG": "They come home late in the evening.",
+        "TR": "Onlar, akşamları geç eve gelirler.",
+        "categoryId": 8
+    },
+    {
+        "id": 302,
+        "ENG": "I read books before going to bed.",
+        "TR": "Yatmadan önce kitap okurum.",
+        "categoryId": 8
+    },
+    {
+        "id": 303,
+        "ENG": "She watches TV in the evening.",
+        "TR": "O, akşamları televizyon izler.",
+        "categoryId": 8
+    },
+    {
+        "id": 304,
+        "ENG": "We do yoga twice a week.",
+        "TR": "İki kez haftada yoga yaparız.",
+        "categoryId": 8
+    },
+    {
+        "id": 305,
+        "ENG": "They go for a walk in the park every Sunday.",
+        "TR": "Onlar, her Pazar parkta yürüyüşe çıkarlar.",
+        "categoryId": 8
+    },
+    {
+        "id": 306,
+        "ENG": "I like to listen to music while doing housework.",
+        "TR": "Ev işi yaparken müzik dinlemeyi severim.",
+        "categoryId": 8
+    },
+    {
+        "id": 307,
+        "ENG": "He has a cup of coffee every afternoon.",
+        "TR": "O, her öğleden sonra bir fincan kahve içer.",
+        "categoryId": 8
+    },
+    {
+        "id": 308,
+        "ENG": "I clean the house every weekend.",
+        "TR": "Her hafta sonu evi temizlerim.",
+        "categoryId": 8
+    },
+    {
+        "id": 309,
+        "ENG": "They go shopping together on Saturdays.",
+        "TR": "Onlar, cumartesileri birlikte alışverişe giderler.",
+        "categoryId": 8
+    },
+    {
+        "id": 310,
+        "ENG": "We check emails before going to work.",
+        "TR": "İşe gitmeden önce e-postaları kontrol ederiz.",
+        "categoryId": 8
+    },
+    {
+        "id": 311,
+        "ENG": "She usually takes a shower in the morning.",
+        "TR": "O, genellikle sabah duş alır.",
+        "categoryId": 8
+    },
+    {
+        "id": 312,
+        "ENG": "I often have a snack in the afternoon.",
+        "TR": "Sık sık öğleden sonra ara öğün yaparım.",
+        "categoryId": 8
+    },
+    {
+        "id": 313,
+        "ENG": "He exercises every morning.",
+        "TR": "O, her sabah egzersiz yapar.",
+        "categoryId": 8
+    },
+    {
+        "id": 314,
+        "ENG": "They go out with friends on Fridays.",
+        "TR": "Onlar, cuma günleri arkadaşlarıyla dışarı çıkarlar.",
+        "categoryId": 8
+    },
+    {
+        "id": 315,
+        "ENG": "I go to bed early on weekdays.",
+        "TR": "Hafta içi erken yatarım.",
+        "categoryId": 8
+    },
+    {
+        "id": 316,
+        "ENG": "She goes for a walk after dinner.",
+        "TR": "O, akşam yemeğinden sonra yürüyüşe çıkar.",
+        "categoryId": 8
+    },
+    {
+        "id": 317,
+        "ENG": "Vacation",
+        "TR": "Tatil",
+        "categoryId": 9
+    },
+    {
+        "id": 318,
+        "ENG": "Trip",
+        "TR": "Gezi",
+        "categoryId": 9
+    },
+    {
+        "id": 319,
+        "ENG": "Travel",
+        "TR": "Seyahat etmek",
+        "categoryId": 9
+    },
+    {
+        "id": 320,
+        "ENG": "Destination",
+        "TR": "Hedef / Gidilecek yer",
+        "categoryId": 9
+    },
+    {
+        "id": 321,
+        "ENG": "Itinerary",
+        "TR": "Seyahat programı",
+        "categoryId": 9
+    },
+    {
+        "id": 322,
+        "ENG": "Hotel",
+        "TR": "Otel",
+        "categoryId": 9
+    },
+    {
+        "id": 323,
+        "ENG": "Beach",
+        "TR": "Plaj",
+        "categoryId": 9
+    },
+    {
+        "id": 324,
+        "ENG": "Sightseeing",
+        "TR": "Gezilecek yerleri gezip görme",
+        "categoryId": 9
+    },
+    {
+        "id": 325,
+        "ENG": "Adventure",
+        "TR": "Macera",
+        "categoryId": 9
+    },
+    {
+        "id": 326,
+        "ENG": "Tourist",
+        "TR": "Turist",
+        "categoryId": 9
+    },
+    {
+        "id": 327,
+        "ENG": "Souvenir",
+        "TR": "Hediyelik eşya",
+        "categoryId": 9
+    },
+    {
+        "id": 328,
+        "ENG": "Camera",
+        "TR": "Fotoğraf makinesi",
+        "categoryId": 9
+    },
+    {
+        "id": 329,
+        "ENG": "Guide",
+        "TR": "Rehber",
+        "categoryId": 9
+    },
+    {
+        "id": 330,
+        "ENG": "Passport",
+        "TR": "Pasaport",
+        "categoryId": 9
+    },
+    {
+        "id": 331,
+        "ENG": "Visa",
+        "TR": "Vize",
+        "categoryId": 9
+    },
+    {
+        "id": 332,
+        "ENG": "Ticket",
+        "TR": "Bilet",
+        "categoryId": 9
+    },
+    {
+        "id": 333,
+        "ENG": "Explore",
+        "TR": "Keşfetmek",
+        "categoryId": 9
+    },
+    {
+        "id": 334,
+        "ENG": "Relax",
+        "TR": "Rahatlamak",
+        "categoryId": 9
+    },
+    {
+        "id": 335,
+        "ENG": "Hike",
+        "TR": "Doğa yürüyüşü yapmak",
+        "categoryId": 9
+    },
+    {
+        "id": 336,
+        "ENG": "Cruise",
+        "TR": "Gemi seyahati",
+        "categoryId": 9
+    },
+    {
+        "id": 337,
+        "ENG": "Sight",
+        "TR": "Manzara / Görülecek yer",
+        "categoryId": 9
+    },
+    {
+        "id": 338,
+        "ENG": "Sunbathe",
+        "TR": "Güneşlenmek",
+        "categoryId": 9
+    },
+    {
+        "id": 339,
+        "ENG": "Swim",
+        "TR": "Yüzmek",
+        "categoryId": 9
+    },
+    {
+        "id": 340,
+        "ENG": "Adventure",
+        "TR": "Macera",
+        "categoryId": 9
+    },
+    {
+        "id": 341,
+        "ENG": "Excursion",
+        "TR": "Gezi",
+        "categoryId": 9
+    },
+    {
+        "id": 342,
+        "ENG": "Explore",
+        "TR": "Keşfetmek",
+        "categoryId": 9
+    },
+    {
+        "id": 343,
+        "ENG": "Discover",
+        "TR": "Keşfetmek",
+        "categoryId": 9
+    },
+    {
+        "id": 344,
+        "ENG": "Stay",
+        "TR": "Konaklamak",
+        "categoryId": 9
+    },
+    {
+        "id": 345,
+        "ENG": "Visit",
+        "TR": "Ziyaret etmek",
+        "categoryId": 9
+    },
+    {
+        "id": 346,
+        "ENG": "Enjoy",
+        "TR": "Keyif almak",
+        "categoryId": 9
+    },
+    {
+        "id": 347,
+        "ENG": "We are planning a vacation to Europe.",
+        "TR": "Avrupa'ya tatil planlıyoruz.",
+        "categoryId": 9
+    },
+    {
+        "id": 348,
+        "ENG": "Last summer, we took a trip to the seaside.",
+        "TR": "Geçen yaz, deniz kenarına bir gezi yaptık.",
+        "categoryId": 9
+    },
+    {
+        "id": 349,
+        "ENG": "We love to travel and explore new places.",
+        "TR": "Yeni yerler keşfetmeyi ve seyahat etmeyi severiz.",
+        "categoryId": 9
+    },
+    {
+        "id": 350,
+        "ENG": "Our destination is a beautiful island.",
+        "TR": "Gidilecek yerimiz güzel bir ada.",
+        "categoryId": 9
+    },
+    {
+        "id": 351,
+        "ENG": "We have a detailed itinerary for our trip.",
+        "TR": "Seyahatimiz için detaylı bir programımız var.",
+        "categoryId": 9
+    },
+    {
+        "id": 352,
+        "ENG": "We booked a hotel near the beach.",
+        "TR": "Plaja yakın bir otel rezerve ettik.",
+        "categoryId": 9
+    },
+    {
+        "id": 353,
+        "ENG": "The sightseeing in the city was amazing.",
+        "TR": "Şehirdeki gezilecek yerler inanılmazdı.",
+        "categoryId": 9
+    },
+    {
+        "id": 354,
+        "ENG": "It was an adventurous journey through the mountains.",
+        "TR": "Dağlar arasında maceralı bir yolculuktu.",
+        "categoryId": 9
+    },
+    {
+        "id": 355,
+        "ENG": "Our guide showed us all the famous landmarks.",
+        "TR": "Rehberimiz bize tüm ünlü anıtları gösterdi.",
+        "categoryId": 9
+    },
+    {
+        "id": 356,
+        "ENG": "I bought some souvenirs to remember the trip.",
+        "TR": "Geziyi hatırlamak için bazı hediyelik eşyalar aldım.",
+        "categoryId": 9
+    },
+    {
+        "id": 357,
+        "ENG": "Don't forget to bring your camera to capture the beautiful moments.",
+        "TR": "Güzel anları yakalamak için fotoğraf makineni getirmeyi unutma.",
+        "categoryId": 9
+    },
+    {
+        "id": 358,
+        "ENG": "We need to renew our passports before the trip.",
+        "TR": "Seyahatten önce pasaportlarımızı yenilememiz gerekiyor.",
+        "categoryId": 9
+    },
+    {
+        "id": 359,
+        "ENG": "We applied for a visa to visit the country.",
+        "TR": "Ülkeyi ziyaret etmek için vize başvurusu yaptık.",
+        "categoryId": 9
+    },
+    {
+        "id": 360,
+        "ENG": "We booked our tickets in advance.",
+        "TR": "Biletlerimizi önceden rezerve ettik.",
+        "categoryId": 9
+    },
+    {
+        "id": 361,
+        "ENG": "We are excited to explore the ancient ruins.",
+        "TR": "Antik kalıntıları keşfetmek için heyecanlıyız.",
+        "categoryId": 9
+    },
+    {
+        "id": 362,
+        "ENG": "Our main plan is to relax on the beach.",
+        "TR": "Ana planımız plajda rahatlamak.",
+        "categoryId": 9
+    },
+    {
+        "id": 363,
+        "ENG": "We went on a hike to the nearby mountain.",
+        "TR": "Yakındaki dağa doğa yürüyüşüne çıktık.",
+        "categoryId": 9
+    },
+    {
+        "id": 364,
+        "ENG": "We had a great time on the cruise.",
+        "TR": "Gemi seyahatinde harika vakit geçirdik.",
+        "categoryId": 9
+    },
+    {
+        "id": 365,
+        "ENG": "The view from the top was breathtaking.",
+        "TR": "Tepten manzara nefes kesiciydi.",
+        "categoryId": 9
+    },
+    {
+        "id": 366,
+        "ENG": "We enjoyed our visit to the local market.",
+        "TR": "Yerel pazarı ziyaret etmekten keyif aldık.",
+        "categoryId": 9
+    },{
+    "id": 367,
+    "ENG": "Abandon",
+    "TR": "Terk etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 368,
+    "ENG": "Accommodate",
+    "TR": "Konaklamak, uygun hale getirmek",
+    "categoryId": 10
+  },
+  {
+    "id": 369,
+    "ENG": "Accurate",
+    "TR": "Doğru, kesin",
+    "categoryId": 10
+  },
+  {
+    "id": 370,
+    "ENG": "Adapt",
+    "TR": "Uyum sağlamak, adapte olmak",
+    "categoryId": 10
+  },
+  {
+    "id": 371,
+    "ENG": "Advantage",
+    "TR": "Avantaj, üstünlük",
+    "categoryId": 10
+  },
+  {
+    "id": 372,
+    "ENG": "Ambitious",
+    "TR": "Hırslı, amaçlı",
+    "categoryId": 10
+  },
+  {
+    "id": 373,
+    "ENG": "Analyze",
+    "TR": "Analiz etmek, incelemek",
+    "categoryId": 10
+  },
+  {
+    "id": 374,
+    "ENG": "Announcement",
+    "TR": "Duyuru, ilan",
+    "categoryId": 10
+  },
+  {
+    "id": 375,
+    "ENG": "Application",
+    "TR": "Başvuru, uygulama",
+    "categoryId": 10
+  },
+  {
+    "id": 376,
+    "ENG": "Approach",
+    "TR": "Yaklaşım, yaklaşmak",
+    "categoryId": 10
+  },
+  {
+    "id": 377,
+    "ENG": "Assist",
+    "TR": "Yardım etmek, desteklemek",
+    "categoryId": 10
+  },
+  {
+    "id": 378,
+    "ENG": "Attitude",
+    "TR": "Tutum, davranış",
+    "categoryId": 10
+  },
+  {
+    "id": 379,
+    "ENG": "Behavior",
+    "TR": "Davranış, tavır",
+    "categoryId": 10
+  },
+  {
+    "id": 380,
+    "ENG": "Benefit",
+    "TR": "Fayda, yarar",
+    "categoryId": 10
+  },
+  {
+    "id": 381,
+    "ENG": "Brief",
+    "TR": "Kısa, öz",
+    "categoryId": 10
+  },
+  {
+    "id": 382,
+    "ENG": "Challenge",
+    "TR": "Meydan okumak, zorluk",
+    "categoryId": 10
+  },
+  {
+    "id": 383,
+    "ENG": "Collaborate",
+    "TR": "İşbirliği yapmak, birlikte çalışmak",
+    "categoryId": 10
+  },
+  {
+    "id": 384,
+    "ENG": "Compare",
+    "TR": "Karşılaştırmak, kıyaslamak",
+    "categoryId": 10
+  },
+  {
+    "id": 385,
+    "ENG": "Contribute",
+    "TR": "Katkıda bulunmak",
+    "categoryId": 10
+  },
+  {
+    "id": 386,
+    "ENG": "Decline",
+    "TR": "Reddetmek, azalmak",
+    "categoryId": 10
+  },
+  {
+    "id": 387,
+    "ENG": "Defend",
+    "TR": "Savunmak, korumak",
+    "categoryId": 10
+  },
+  {
+    "id": 388,
+    "ENG": "Describe",
+    "TR": "Tanımlamak, açıklamak",
+    "categoryId": 10
+  },
+  {
+    "id": 389,
+    "ENG": "Develop",
+    "TR": "Geliştirmek, gelişmek",
+    "categoryId": 10
+  },
+  {
+    "id": 390,
+    "ENG": "Discuss",
+    "TR": "Tartışmak, görüşmek",
+    "categoryId": 10
+  },
+  {
+    "id": 391,
+    "ENG": "Efficient",
+    "TR": "Verimli, etkili",
+    "categoryId": 10
+  },
+  {
+    "id": 392,
+    "ENG": "Enable",
+    "TR": "Olanak sağlamak, yetki vermek",
+    "categoryId": 10
+  },
+  {
+    "id": 393,
+    "ENG": "Encourage",
+    "TR": "Teşvik etmek, cesaretlendirmek",
+    "categoryId": 10
+  },
+  {
+    "id": 394,
+    "ENG": "Environment",
+    "TR": "Çevre, ortam",
+    "categoryId": 10
+  },
+  {
+    "id": 395,
+    "ENG": "Establish",
+    "TR": "Kurmak, tesis etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 396,
+    "ENG": "Evaluate",
+    "TR": "Değerlendirmek, değerini belirlemek",
+    "categoryId": 10
+  },
+  {
+    "id": 397,
+    "ENG": "Evidence",
+    "TR": "Kanıt, delil",
+    "categoryId": 10
+  },
+  {
+    "id": 398,
+    "ENG": "Examine",
+    "TR": "İncelemek, muayene etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 399,
+    "ENG": "Experiment",
+    "TR": "Deney, deney yapmak",
+    "categoryId": 10
+  },
+  {
+    "id": 400,
+    "ENG": "Explain",
+    "TR": "Açıklamak, izah etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 401,
+    "ENG": "Express",
+    "TR": "İfade etmek, ifade",
+    "categoryId": 10
+  },
+  {
+    "id": 402,
+    "ENG": "Extend",
+    "TR": "Uzatmak, genişletmek",
+    "categoryId": 10
+  },
+  {
+    "id": 403,
+    "ENG": "Familiar",
+    "TR": "Tanıdık, aşina",
+    "categoryId": 10
+  },
+  {
+    "id": 404,
+    "ENG": "Feature",
+    "TR": "Özellik, nitelik",
+    "categoryId": 10
+  },
+  {
+    "id": 405,
+    "ENG": "Focus",
+    "TR": "Odaklanmak, odak",
+    "categoryId": 10
+  },
+  {
+    "id": 406,
+    "ENG": "Gather",
+    "TR": "Toplamak, toplanmak",
+    "categoryId": 10
+  },
+  {
+    "id": 407,
+    "ENG": "Generate",
+    "TR": "Üretmek, oluşturmak",
+    "categoryId": 10
+  },
+  {
+    "id": 408,
+    "ENG": "Identify",
+    "TR": "Tanımlamak, belirlemek",
+    "categoryId": 10
+  },
+  {
+    "id": 409,
+    "ENG": "Improve",
+    "TR": "İyileştirmek, geliştirmek",
+    "categoryId": 10
+  },
+  {
+    "id": 410,
+    "ENG": "Include",
+    "TR": "İçermek, dahil etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 411,
+    "ENG": "Indicate",
+    "TR": "Göstermek, işaret etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 412,
+    "ENG": "Influence",
+    "TR": "Etkilemek, etki",
+    "categoryId": 10
+  },
+  {
+    "id": 413,
+    "ENG": "Inquire",
+    "TR": "Sormak, araştırmak",
+    "categoryId": 10
+  },
+  {
+    "id": 414,
+    "ENG": "Introduce",
+    "TR": "Tanıtmak, sunmak",
+    "categoryId": 10
+  },
+  {
+    "id": 415,
+    "ENG": "Involve",
+    "TR": "İlgilendirmek, dahil etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 416,
+    "ENG": "Knowledge",
+    "TR": "Bilgi, bilinç",
+    "categoryId": 10
+  },
+  {
+    "id": 417,
+    "ENG": "Maintain",
+    "TR": "Sürdürmek, korumak",
+    "categoryId": 10
+  },
+  {
+    "id": 418,
+    "ENG": "Manage",
+    "TR": "Yönetmek, idare etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 419,
+    "ENG": "Mention",
+    "TR": "Bahsetmek, söz etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 420,
+    "ENG": "Negotiate",
+    "TR": "Müzakere etmek, görüşmek",
+    "categoryId": 10
+  },
+  {
+    "id": 421,
+    "ENG": "Observe",
+    "TR": "Gözlemlemek, incelemek",
+    "categoryId": 10
+  },
+  {
+    "id": 422,
+    "ENG": "Obtain",
+    "TR": "Elde etmek, kazanmak",
+    "categoryId": 10
+  },
+  {
+    "id": 423,
+    "ENG": "Occur",
+    "TR": "Meydana gelmek, olmak",
+    "categoryId": 10
+  },
+  {
+    "id": 424,
+    "ENG": "Opportunity",
+    "TR": "Fırsat, olanak",
+    "categoryId": 10
+  },
+  {
+    "id": 425,
+    "ENG": "Participate",
+    "TR": "Katılmak, iştirak etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 426,
+    "ENG": "Perform",
+    "TR": "Yapmak, icra etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 427,
+    "ENG": "Persuade",
+    "TR": "İkna etmek, inandırmak",
+    "categoryId": 10
+  },
+  {
+    "id": 428,
+    "ENG": "Predict",
+    "TR": "Tahmin etmek, öngörmek",
+    "categoryId": 10
+  },
+  {
+    "id": 429,
+    "ENG": "Prevent",
+    "TR": "Önlemek, engellemek",
+    "categoryId": 10
+  },
+  {
+    "id": 430,
+    "ENG": "Produce",
+    "TR": "Üretmek, yapmak",
+    "categoryId": 10
+  },
+  {
+    "id": 431,
+    "ENG": "Progress",
+    "TR": "İlerlemek, ilerleme",
+    "categoryId": 10
+  },
+  {
+    "id": 432,
+    "ENG": "Provide",
+    "TR": "Sağlamak, temin etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 433,
+    "ENG": "Purpose",
+    "TR": "Amaç, gaye",
+    "categoryId": 10
+  },
+  {
+    "id": 434,
+    "ENG": "Recognize",
+    "TR": "Tanımak, fark etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 435,
+    "ENG": "Recommend",
+    "TR": "Tavsiye etmek, önermek",
+    "categoryId": 10
+  },
+  {
+    "id": 436,
+    "ENG": "Reflect",
+    "TR": "Yansıtmak, yansımak",
+    "categoryId": 10
+  },
+  {
+    "id": 437,
+    "ENG": "Refuse",
+    "TR": "Reddetmek, geri çevirmek",
+    "categoryId": 10
+  },
+  {
+    "id": 438,
+    "ENG": "Regard",
+    "TR": "Göz önünde bulundurmak, saygı",
+    "categoryId": 10
+  },
+  {
+    "id": 439,
+    "ENG": "Relate",
+    "TR": "İlişkilendirmek, bağlamak",
+    "categoryId": 10
+  },
+  {
+    "id": 440,
+    "ENG": "Remain",
+    "TR": "Kalmak, geriye kalmak",
+    "categoryId": 10
+  },
+  {
+    "id": 441,
+    "ENG": "Represent",
+    "TR": "Temsil etmek, simgelemek",
+    "categoryId": 10
+  },
+  {
+    "id": 442,
+    "ENG": "Request",
+    "TR": "İstek, talep etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 443,
+    "ENG": "Respond",
+    "TR": "Yanıtlamak, cevap vermek",
+    "categoryId": 10
+  },
+  {
+    "id": 444,
+    "ENG": "Revise",
+    "TR": "Gözden geçirmek, düzeltmek",
+    "categoryId": 10
+  },
+  {
+    "id": 445,
+    "ENG": "Schedule",
+    "TR": "Programlamak, zamanlamak",
+    "categoryId": 10
+  },
+  {
+    "id": 446,
+    "ENG": "Suggest",
+    "TR": "Önermek, teklif etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 447,
+    "ENG": "Support",
+    "TR": "Desteklemek, destek",
+    "categoryId": 10
+  },
+  {
+    "id": 448,
+    "ENG": "Surround",
+    "TR": "Çevrelemek, kuşatmak",
+    "categoryId": 10
+  },
+  {
+    "id": 449,
+    "ENG": "Survive",
+    "TR": "Hayatta kalmak, sağ kalmak",
+    "categoryId": 10
+  },
+  {
+    "id": 450,
+    "ENG": "Translate",
+    "TR": "Çevirmek, tercüme etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 451,
+    "ENG": "Travel",
+    "TR": "Seyahat etmek, yolculuk",
+    "categoryId": 10
+  },
+  {
+    "id": 452,
+    "ENG": "Understand",
+    "TR": "Anlamak, kavramak",
+    "categoryId": 10
+  },
+  {
+    "id": 453,
+    "ENG": "Update",
+    "TR": "Güncellemek, güncelleme",
+    "categoryId": 10
+  },
+  {
+    "id": 454,
+    "ENG": "Vary",
+    "TR": "Değişmek, çeşitlilik göstermek",
+    "categoryId": 10
+  },
+  {
+    "id": 455,
+    "ENG": "View",
+    "TR": "Görüş, bakış açısı",
+    "categoryId": 10
+  },
+  {
+    "id": 456,
+    "ENG": "Waste",
+    "TR": "İsraf etmek, ziyan etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 457,
+    "ENG": "Weigh",
+    "TR": "Tartmak, değerlendirmek",
+    "categoryId": 10
+  },
+  {
+    "id": 458,
+    "ENG": "Withdraw",
+    "TR": "Geri çekilmek, para çekmek",
+    "categoryId": 10
+  },
+  {
+    "id": 459,
+    "ENG": "Wonder",
+    "TR": "Merak etmek, hayret etmek",
+    "categoryId": 10
+  },
+  {
+    "id": 460,
+    "ENG": "Work",
+    "TR": "Çalışmak, iş",
+    "categoryId": 10
+  },
+  {
+    "id": 461,
+    "ENG": "Worry",
+    "TR": "Endişelenmek, kaygılanmak",
+    "categoryId": 10
+  },
+  {
+    "id": 462,
+    "ENG": "Write",
+    "TR": "Yazmak, yazı",
+    "categoryId": 10
+  },
+  {
+    "id": 463,
+    "ENG": "Yield",
+    "TR": "Verim, ürün",
+    "categoryId": 10
+  },
+  {
+    "id": 464,
+    "ENG": "Zeal",
+    "TR": "İstek, şevk",
+    "categoryId": 10
+  },
+  {
+    "id": 465,
+    "ENG": "Zone",
+    "TR": "Bölge, alan",
+    "categoryId": 10
+  },
+  {
+    "id": 466,
+    "ENG": "Abide",
+    "TR": "Uymak, sabretmek",
+    "categoryId": 10
+  },
+  {
+    "id": 467,
+    "ENG": "Enjoy",
+    "TR": "Keyif almak",
+    "categoryId": 10
+  }, {
+    "id": 468,
+    "ENG": "Enjoy",
+    "TR": "Keyif almak",
+    "categoryId": 10
+  },
+  {
+    "id": 469,
+    "ENG": "I have a question.",
+    "TR": "Bir sorum var.",
+    "categoryId": 10
+  },
+  {
+    "id": 470,
+    "ENG": "It's up to you.",
+    "TR": "Sana bağlı.",
+    "categoryId": 10
+  },
+  {
+    "id": 471,
+    "ENG": "I don't mind.",
+    "TR": "Benim için fark etmez.",
+    "categoryId": 10
+  },
+  {
+    "id": 472,
+    "ENG": "That's a good idea.",
+    "TR": "Bu iyi bir fikir.",
+    "categoryId": 10
+  },
+  {
+    "id": 473,
+    "ENG": "I'm not sure.",
+    "TR": "Emin değilim.",
+    "categoryId": 10
+  },
+  {
+    "id": 474,
+    "ENG": "I don't think so.",
+    "TR": "Sanmıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 475,
+    "ENG": "I have no idea.",
+    "TR": "Hiçbir fikrim yok.",
+    "categoryId": 10
+  },
+  {
+    "id": 476,
+    "ENG": "I understand.",
+    "TR": "Anlıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 477,
+    "ENG": "I don't understand.",
+    "TR": "Anlamıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 478,
+    "ENG": "I'm sorry to hear that.",
+    "TR": "Bunu duyduğuma üzüldüm.",
+    "categoryId": 10
+  },
+  {
+    "id": 479,
+    "ENG": "I'm glad to hear that.",
+    "TR": "Bunu duyduğuma sevindim.",
+    "categoryId": 10
+  },
+  {
+    "id": 480,
+    "ENG": "I'm looking forward to it.",
+    "TR": "Bunu dört gözle bekliyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 481,
+    "ENG": "It doesn't matter to me.",
+    "TR": "Benim için önemli değil.",
+    "categoryId": 10
+  },
+  {
+    "id": 482,
+    "ENG": "I can't believe it.",
+    "TR": "İnanamıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 483,
+    "ENG": "I'm not feeling well.",
+    "TR": "İyi hissetmiyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 484,
+    "ENG": "I have a headache.",
+    "TR": "Başım ağrıyor.",
+    "categoryId": 10
+  },
+  {
+    "id": 485,
+    "ENG": "I have a cold.",
+    "TR": "Üşüttüm.",
+    "categoryId": 10
+  },
+  {
+    "id": 486,
+    "ENG": "I'm running late.",
+    "TR": "Geç kalıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 487,
+    "ENG": "I'm so tired.",
+    "TR": "Çok yorgunum.",
+    "categoryId": 10
+  },
+  {
+    "id": 488,
+    "ENG": "I'm in a hurry.",
+    "TR": "Acelem var.",
+    "categoryId": 10
+  },
+  {
+    "id": 489,
+    "ENG": "I have to go now.",
+    "TR": "Şimdi gitmeliyim.",
+    "categoryId": 10
+  },
+  {
+    "id": 490,
+    "ENG": "I'll be right back.",
+    "TR": "Hemen döneceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 491,
+    "ENG": "I'll call you later.",
+    "TR": "Daha sonra arayacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 492,
+    "ENG": "I'll let you know.",
+    "TR": "Sizi bilgilendireceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 493,
+    "ENG": "I'll think about it.",
+    "TR": "Bunu düşüneceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 494,
+    "ENG": "I'll keep that in mind.",
+    "TR": "Bunu aklımda tutacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 495,
+    "ENG": "I'll take care of it.",
+    "TR": "Ben halledeceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 496,
+    "ENG": "I'll have the same.",
+    "TR": "Ben de aynısından alacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 497,
+    "ENG": "I'll pay for it.",
+    "TR": "Ben ödeyeceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 498,
+    "ENG": "I'll take the chicken.",
+    "TR": "Tavuğu alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 499,
+    "ENG": "I'll have the steak.",
+    "TR": "Bifteği alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 500,
+    "ENG": "I'll go first.",
+    "TR": "Ben önce gideceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 501,
+    "ENG": "I'll pass.",
+    "TR": "Ben vazgeçerim.",
+    "categoryId": 10
+  },
+  {
+    "id": 502,
+    "ENG": "I'll take a rain check.",
+    "TR": "Başka sefere olur.",
+    "categoryId": 10
+  },
+  {
+    "id": 503,
+    "ENG": "I'll catch up with you later.",
+    "TR": "Daha sonra seninle buluşurum.",
+    "categoryId": 10
+  },
+  {
+    "id": 504,
+    "ENG": "I'll get back to you.",
+    "TR": "Size geri döneceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 505,
+    "ENG": "I'll see what I can do.",
+    "TR": "Ne yapabileceğime bakarım.",
+    "categoryId": 10
+  },
+  {
+    "id": 506,
+    "ENG": "I'll see you tomorrow.",
+    "TR": "Yarın görüşürüz.",
+    "categoryId": 10
+  },
+  {
+    "id": 507,
+    "ENG": "I'll show you the way.",
+    "TR": "Sana yolu göstereceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 508,
+    "ENG": "I'll take your word for it.",
+    "TR": "Sana inanıyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 509,
+    "ENG": "I'll think it over.",
+    "TR": "Üzerine düşüneceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 510,
+    "ENG": "I'll be in touch.",
+    "TR": "İletişimde olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 511,
+    "ENG": "I'll get it done.",
+    "TR": "Hallederim.",
+    "categoryId": 10
+  },
+  {
+    "id": 512,
+    "ENG": "I'll see you later.",
+    "TR": "Sonra görüşürüz.",
+    "categoryId": 10
+  },
+  {
+    "id": 513,
+    "ENG": "I'll be there.",
+    "TR": "Orada olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 514,
+    "ENG": "I'll take a look.",
+    "TR": "Bir bakacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 515,
+    "ENG": "I'll be back soon.",
+    "TR": "Çok yakında döneceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 516,
+    "ENG": "I'll give it a try.",
+    "TR": "Deneyeceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 517,
+    "ENG": "I'll let you go.",
+    "TR": "Sana izin veriyorum.",
+    "categoryId": 10
+  },
+  {
+    "id": 518,
+    "ENG": "I'll make a reservation.",
+    "TR": "Rezervasyon yapacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 519,
+    "ENG": "I'll take the bus.",
+    "TR": "Otobüsü alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 520,
+    "ENG": "I'll take the train.",
+    "TR": "Treni alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 521,
+    "ENG": "I'll pay in cash.",
+    "TR": "Nakit ödeyeceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 522,
+    "ENG": "I'll pay by credit card.",
+    "TR": "Kredi kartıyla ödeyeceğim.",
+    "categoryId": 10
+  },
+  {
+    "id": 523,
+    "ENG": "I'll take the red one.",
+    "TR": "Kırmızı olanı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 524,
+    "ENG": "I'll take the blue one.",
+    "TR": "Mavi olanı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 525,
+    "ENG": "I'll have the same thing.",
+    "TR": "Aynısından alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 526,
+    "ENG": "I'll have a glass of water.",
+    "TR": "Bir bardak su alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 527,
+    "ENG": "I'll have a cup of coffee.",
+    "TR": "Bir fincan kahve alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 528,
+    "ENG": "I'll have a beer.",
+    "TR": "Bir bira alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 529,
+    "ENG": "I'll have a glass of wine.",
+    "TR": "Bir bardak şarap alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 530,
+    "ENG": "I'll have the salad.",
+    "TR": "Salatayı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 531,
+    "ENG": "I'll take the fish.",
+    "TR": "Balığı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 532,
+    "ENG": "I'll take the shrimp.",
+    "TR": "Karidesi alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 533,
+    "ENG": "I'll have the pasta.",
+    "TR": "Makarnayı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 534,
+    "ENG": "I'll have the chicken.",
+    "TR": "Tavuğu alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 535,
+    "ENG": "I'll have the steak.",
+    "TR": "Bifteği alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 536,
+    "ENG": "I'll take the vegetarian option.",
+    "TR": "Vejetaryen seçeneğini alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 537,
+    "ENG": "I'll have a dessert.",
+    "TR": "Bir tatlı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 538,
+    "ENG": "I'll pass on dessert.",
+    "TR": "Tatlıyı almayacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 539,
+    "ENG": "I'll take a rain check on dessert.",
+    "TR": "Tatlı için başka sefere olur.",
+    "categoryId": 10
+  },
+  {
+    "id": 540,
+    "ENG": "I'll have a slice of cake.",
+    "TR": "Bir dilim pasta alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 541,
+    "ENG": "I'll take the chocolate cake.",
+    "TR": "Çikolatalı pastayı alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 542,
+    "ENG": "I'll take the cheesecake.",
+    "TR": "Cheesecake alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 543,
+    "ENG": "I'll take the fruit salad.",
+    "TR": "Meyve salatasını alırım.",
+    "categoryId": 10
+  },
+  {
+    "id": 544,
+    "ENG": "I'll pass on the dessert menu.",
+    "TR": "Tatlı menüsünden vazgeçerim.",
+    "categoryId": 10
+  },
+  {
+    "id": 545,
+    "ENG": "I'll be there on time.",
+    "TR": "Vaktinde orada olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 546,
+    "ENG": "I'll be there in a minute.",
+    "TR": "Bir dakika içinde orada olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 547,
+    "ENG": "I'll be there in five minutes.",
+    "TR": "Beş dakika içinde orada olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 548,
+    "ENG": "I'll be there soon.",
+    "TR": "Yakında orada olacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 549,
+    "ENG": "I'll be there a little late.",
+    "TR": "Biraz geç kalacağım.",
+    "categoryId": 10
+  },
+  {
+    "id": 550,
+    "ENG": "I'll be there in no time.",
+    "TR": "Çok geçmeden orada olacağım.",
+    "categoryId": 10
+  }
+]

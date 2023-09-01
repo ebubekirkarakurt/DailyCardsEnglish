@@ -86,6 +86,7 @@ fun NoteListItems(navController: NavHostController, notes: List<Note>) {
                         text = note.title,
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
+                        color = Color.Black,
                         modifier = Modifier.padding(10.dp)
                     )
                     Text(

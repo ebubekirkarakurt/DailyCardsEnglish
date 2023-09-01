@@ -85,6 +85,7 @@ fun UpdateNoteItems(navController: NavHostController,
     )
 
     Column(modifier = Modifier
+        .background(Color.White)
         .padding(top = 15.dp)
         .fillMaxSize()
     ) {
@@ -104,7 +105,7 @@ fun UpdateNoteItems(navController: NavHostController,
                     tint = Color.Black
                 )
             }
-            Box(modifier = Modifier) {
+            Box(modifier = Modifier.background(Color.White)) {
                 Row {
                     Button(
                         modifier = Modifier.background(Color.Transparent),
@@ -155,7 +156,7 @@ fun UpdateNoteItems(navController: NavHostController,
                 .fillMaxWidth()
                 .padding(10.dp)
         ) {
-            Column {
+            Column(modifier = Modifier.background(Color.White)) {
                 TextField(
                     value = updatedTitle,
                     onValueChange = { updatedTitle = it },
