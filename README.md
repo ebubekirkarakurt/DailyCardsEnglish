@@ -1,3 +1,1 @@
-## OLA English
-
-## Screen Shots
+## OLA English 
